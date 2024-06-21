@@ -5,3 +5,73 @@
 .nav-item {
     transition: transform 0.3s;
 }
+
+.navbar {
+    background: rgb(240,33,33);
+background: linear-gradient(90deg, rgba(240,33,33,1) 0%, rgba(73,42,164,1) 100%);
+
+   .navbar-nav {
+    gap: 2rem;
+}
+
+    .navbar-brand {
+    margin-left: 10rem;
+}
+
+    img {
+    margin-left: -1rem;
+    margin-right: -1rem;
+
+}
+
+}
+
+
+.d-flex {
+    padding: 2rem;
+    margin-right: 6rem;
+    
+    a {
+        color: white;
+       margin-right: 4rem;
+       text-decoration: none;
+    }
+    
+    #usericon {
+        margin-right: 1rem;
+    }
+    
+    img {
+        cursor: pointer;
+    }
+}
+
+/*Fim da Navbar------------------------------------------------*/
+.caixona{
+    float: left;
+    text-align: center;
+
+
+}
+.caixinha{
+    padding: 50px;
+}
+.menu{
+    width: 30em;
+    padding: 50px;
+    padding-left: 50px;
+    background-color: #F02121;
+        h1{
+            color: #FFECE5;
+        }
+}
+.cardapio{
+    width: 70em;
+    background-color: #FFF8F8;
+    padding: 50px;
+}
+
+.titles{
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+}

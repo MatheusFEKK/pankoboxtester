@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+/* # NAVBAR */
+.nav-item:hover {
+    transform: translateY(-0.5vh);
+}
+.nav-item {
+    transition: transform 0.3s;
+    
+    a {
+        color: white;
+    }
+}
+
+
+.navbar {
+    background: rgb(240,33,33);
+background: linear-gradient(90deg, rgba(240,33,33,1) 0%, rgba(73,42,164,1) 100%);
+
+   .navbar-nav {
+    gap: 2rem;
+}
+
+    .navbar-brand {
+    margin-left: 10rem;
+}
+
+    img {
+    margin-left: -1rem;
+    margin-right: -1rem;
+
+}
+
+}
+
+
+.d-flex {
+    padding: 2rem;
+    margin-right: 6rem;
+    
+    a {
+        color: white;
+       margin-right: 4rem;
+       text-decoration: none;
+    }
+    
+    #usericon {
+        margin-right: 1rem;
+    }
+    
+    img {
+        cursor: pointer;
+    }
+}
+/* #NAVBAR END */
+
+/* MENU START */
+
+
+.categorias {
+    display: flex;
+    
+    min-width: 20rem;
+    max-width: 40rem;
+    
+
+    box-shadow: 3px 3px 10px;
+    border-radius: 3.8vh;
+    background-color: #F8F8F8;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+/* MENU END */
+
+.boxcardapio {
+    border-radius: 3rem;
+    width: 12rem;
+    box-shadow: 1px 1px 10px ;
+    padding: 10px;
+
+    img {
+        margin-left: 1.5rem;
+    }
+}
+
+.cardapio {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    gap: 5rem;
+    h5 {
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.exploring {
+    h1 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+}
+.bxcate {
+    width: 5vw;
+
+    h5 {
+        text-align: center;
+    }
+}

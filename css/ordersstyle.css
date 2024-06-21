@@ -1,0 +1,7 @@
+.nav-item:hover {
+    transform: translateY(-0.5vh)
+}
+
+.nav-item {
+    transition: transform 0.3s;
+}

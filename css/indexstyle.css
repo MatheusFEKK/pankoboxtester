@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -11,8 +12,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+@media only screen and (max-width: 768px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -25,6 +25,12 @@
 
 }
 
+.receipt-background#blur.active{
+
+        filter: blur(20px);
+        background-color: rgba(0, 0, 0, 0);
+    }
+
 * {
     font-family: "Inter", sans-serif;
     font-weight: bold;
@@ -32,24 +38,42 @@
 }
 
 /* # NAVBAR */
+
 .nav-item:hover {
     transform: translateY(-0.5vh);
 }
 .nav-item {
     transition: transform 0.3s;
-    
     a {
         color: white;
     }
+
 }
+
+.text-border{
+    /*A classe Text-border é responsável pela criação da animação da borda branca nos textos da navbar.*/
+    margin: 0;
+    display: inline-block;
+}
+
+.text-border:after {
+    display: block;
+    content: '';
+    transform: scaleX(0); 
+    border-bottom: 4px solid #FFECE5;
+    transition: transform 250ms ease-in-out;
+}
+
+.text-border:hover:after { transform: scaleX(1); }
 
 
 .navbar {
     background: rgb(240,33,33);
-background: linear-gradient(90deg, rgba(240,33,33,1) 0%, rgba(73,42,164,1) 100%);
+    background: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
 
    .navbar-nav {
     gap: 2rem;
+
 }
 
     .navbar-brand {
@@ -64,26 +88,42 @@ background: linear-gradient(90deg, rgba(240,33,33,1) 0%, rgba(73,42,164,1) 100%)
 
 }
 
+.itens-nav {
+    margin-top: 0.5rem;
+    width: 55rem;
 
-.d-flex {
-    padding: 2rem;
-    margin-right: 6rem;
-    
-    a {
-        color: white;
-       margin-right: 4rem;
-       text-decoration: none;
-    }
-    
-    #usericon {
-        margin-right: 1rem;
-    }
-    
-    img {
-        cursor: pointer;
+    .nav-item {
+        margin-left: 5rem;
     }
 }
+
+.d-flex {
+    padding: 0.5rem;
+    margin-left: 12rem;
+
+    #user {
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        flex-direction: row;
+        cursor: pointer;
+
+       img {
+        margin-left: 1rem;
+        width: 25px;
+        height: 25px;
+       }
+    }
+    
+    #cart {
+        padding-left: 5rem;
+        width: 7rem;
+}
+}
+
 /* #NAVBAR END */
+
 
 /* MENU START */
 
@@ -95,11 +135,11 @@ background: linear-gradient(90deg, rgba(240,33,33,1) 0%, rgba(73,42,164,1) 100%)
 .categorias {
     display: flex;
     
-    min-width: 20rem;
-    max-width: 40rem;
+    min-width: 30rem;
+    max-width: 50rem;
     
 
-    box-shadow: 3px 3px 10px;
+    box-shadow: 0px 2px 4px 0px ;
     border-radius: 3.8vh;
     background-color: #F8F8F8;
     gap: 3rem;
@@ -112,9 +152,9 @@ background: linear-gradient(90deg, rgba(240,33,33,1) 0%, rgba(73,42,164,1) 100%)
 /* MENU END */
 
 .boxcardapio {
-    border-radius: 3rem;
+    border-radius: 2rem;
     width: 12rem;
-    box-shadow: 1px 1px 10px ;
+    box-shadow: 0px 2px 4px 0px;
     padding: 10px;
 
     img {
@@ -122,11 +162,13 @@ background: linear-gradient(90deg, rgba(240,33,33,1) 0%, rgba(73,42,164,1) 100%)
     }
 }
 
+
 .cardapio {
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
     gap: 5rem;
+    flex-wrap: wrap;
     h5 {
         font-weight: bold;
         text-align: center;
@@ -137,6 +179,9 @@ background: linear-gradient(90deg, rgba(240,33,33,1) 0%, rgba(73,42,164,1) 100%)
     h1 {
     font-weight: bolder;
     font-size: 30px;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    flex-wrap: wrap;
 }
 }
 .bxcate {
@@ -146,3 +191,183 @@ background: linear-gradient(90deg, rgba(240,33,33,1) 0%, rgba(73,42,164,1) 100%)
         text-align: center;
     }
 }
+
+.buy {
+    background-color: #FFA24B;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    width: 9rem;
+    transition: transform 150ms;
+    
+}
+
+/*RECEIPT*/
+
+.receipt-background{
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80rem;
+    padding: 2rem;
+    background-color: #f6f7fc;
+    border-radius: 2rem;
+    animation: receipt_opening 1s ;
+    
+    h2{
+        margin-bottom: 1.5rem;
+            font-family: "Kadwa", sans-serif;
+            text-align: center;
+            font-weight: 700;
+            
+        }
+
+        
+    }
+    .button-close{
+        font-weight: 700;
+        width: 2rem;
+        height: 2rem;
+        float: right;
+        border: none;
+        border-radius: 0.5rem;
+        transition: all 0.3s;
+    }
+    .button-close:hover {
+        background-color: crimson;
+    }
+
+    .meal-product-details{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    
+    .receipt-img{
+        border-radius: 30px;
+            
+    }
+    
+    .receipt-description{
+        padding: 30px;
+    
+            h3{
+                text-align: center;
+                
+            }
+            
+    }
+    
+    .receipt-buy-button{
+    
+        float: right;
+    
+    }
+    
+    .receipt-buy{
+        padding: 0.8rem;
+        width: 5em;
+        background-color: #FFA24B;
+        border: none;
+        border-radius: 1rem;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .receipt-buy:hover{
+        cursor:pointer;
+    
+    
+    }
+
+@keyframes receipt_opening{
+    from {opacity: 0.5;}
+    to {opacity:1;}
+
+}
+
+ 
+
+
+
+/*RECEIPT END*/
+
+/* FOOTER */
+ 
+#footer{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    height: 33vh;
+    padding: 0px;
+    flex-direction: row;
+    background: rgb(240,33,33);
+    background: linear-gradient(90deg, rgba(240,33,33,1) 40%, rgba(73,42,164,1) 100%);
+}
+
+
+.fbx1{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 3vh;
+    text-align: start;
+    flex: 50%;
+
+        #footerlogo{
+            width: 40rem;
+        }
+}
+.fbx2{
+    flex:25%;
+    
+}
+.fbx3{
+    flex:30%;
+
+    
+}
+.fbx4{
+    flex:15%;
+    
+}
+
+.footerfontcolor{
+    color: #FFECE5;
+}
+.footertext{
+    color: #FFECE5;
+    font-size: 1.5em;
+}
+.titlefooter{
+    border-bottom: solid #FFECE5 2px;
+}
+.kadwa-bold {
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media (max-width: 912px){
+    #footer{
+        flex-direction: column;
+    }
+    .fbx1{
+        flex: 30%;
+    }
+    .fbx2{
+        flex: 30%;
+    }
+    .fbx3{
+        flex: 30%;
+    }
+    .fbx4{
+        flex: 15%;
+    }
+}
+
+/* FOOTER END */

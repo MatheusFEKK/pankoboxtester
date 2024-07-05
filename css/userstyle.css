@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
     max-width: 100%;
 }
+
 
 /* # NAVBAR */
 
@@ -35,6 +37,8 @@
 
 
 .navbar {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
     background: rgb(240,33,33);
     background: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
 
@@ -90,3 +94,45 @@
 }
 
 /* #NAVBAR END */
+
+/* MENU START*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: 45rem;
+    height: 45rem;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 4px 0px;
+    margin-top: 3rem;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #historyuser {
+        padding: 2rem;
+
+        span {
+            padding: 1rem;
+        }
+    }
+
+    #cartuser {
+        padding: 2rem;
+
+        span {
+            padding: 1rem;
+        }
+    }
+}

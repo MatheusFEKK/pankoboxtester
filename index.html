@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/indexstyle.css">
 </head>
 <body>
+
   <!-- COMEÇO DA NAVBAR -->
     <nav class="navbar navbar-expand-lg">
       
@@ -17,32 +18,35 @@
           </button>
           <a class="navbar-brand" href="#">PANKO B<img src="img/logo/mascote modified.png"width="64px" height="64px">X
           </a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <div class="itens-nav d-flex">
             <ul class="navbar-nav me-auto mb-1 mb-lg-2">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link text-border" href="index.html">Página Inicial</a>
                 <!-- <img src="img/icons/home icon.png" width="16px"> -->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="foodmenu.html">Food Menu</a>
+                <a class="nav-link text-border" href="foodmenu.html">Cardápio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="orders.html">Orders</a>
+                <a class="nav-link text-border" href="orders.html">Pedidos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="promotions.html">Promotions</a>
+                <a class="nav-link text-border" href="promotions.html">Promoções</a>
               </li>
             </ul>
-            <nav>
-              <form class="d-flex">
-                <img src="img/icons/icons8-user-100.png" id="usericon" width="24px">
-                  <a href="useraccount.html">User</a>
-                <img src="img/icons/cart.png" width="24px">
-              </form>
-            </nav>
           </div>
-        
-      </nav>
+              <form class="d-flex">
+                <a href="useraccount.html" id="user">
+                  <span>Usuário</span>
+                <img src="img/icons/icons8-user-100.png">
+              </a>
+                <a href="cart.html" id="cart">
+                <img src="img/icons/cart.png">
+              </a>
+              </form>
+        </div>
+    </nav>
       <!-- FIM DA NAVBAR -->
 
       <!-- COMECO CAROUSEL -->
@@ -122,16 +126,17 @@
     
     <!-- PRODUTOS -->
     <div class="exploring">
-      <div class="row">
-        <div class="col-md-12">
+          <div class="container">
             <h1>Destaques</h1>
+          </div>
           <div class="cardapio">
             <div class="boxcardapio">
               <a href="#">
                 <img src="img/pratos/Imagens prontas/prontosashimi.png">
               </a>
-              <h5>SASHIMI</h5>
+              <h5>KARAAGE</h5>
               <h5>PREÇO: <br> R$54.90</h5>
+              <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
             </div>
             <div class="boxcardapio">
               <a href="#">
@@ -139,6 +144,7 @@
               </a>
               <h5>SASHIMI</h5>
               <h5>PREÇO: <br> R$54.90</h5>
+              <button class="buy display-flex">COMPRAR</button>
             </div>
             <div class="boxcardapio">
               <a href="#">
@@ -146,6 +152,7 @@
               </a>
               <h5>SASHIMI</h5>
               <h5>PREÇO: <br> R$54.90</h5>
+              <button class="buy display-flex">COMPRAR</button>
             </div>
             <div class="boxcardapio">
               <a href="#">
@@ -153,6 +160,7 @@
               </a>
               <h5>SASHIMI</h5>
               <h5>PREÇO: <br> R$54.90</h5>
+              <button class="buy display-flex">COMPRAR</button>
             </div>
           </div>
           </div>
@@ -160,7 +168,53 @@
       </div>
     </div>
     <!-- PRODUTOS -->
+     <!--DESCRIÇÃO/TEMPLATE DOS PRODUTOS FEITO EM JAVASCRIPT-->
+       <!-- <div class="receipt-background">
+        <button class="button-close" onclick="receipt_close()">X</button>
+        <h2>Karaage</h2>
+         <div class="meal-product-details">
+           <img class="receipt-img" src="img/receipt/karaage_receita.png" style="height: 600px; width: 600px;">
+           <div class="receipt-description">
+            <aside>
+              <h3>Receita</h3>
+              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores illo consequuntur qui. Assumenda, ducimus harum in mollitia voluptates nisi blanditiis et laborum autem, magni qui vitae eveniet molestias soluta amet.</h4>
+            </aside>
+            <div id="button">
+              
+            </div>
+          </div>
+          
+        </div>
+        <div class="receipt-buy-button">
+          <a class="receipt-buy inert">Peça já</a>
+        </div>
+  
+      </div> -->
 
+     <!--FINALIZAÇÃO DA DESCRIÇÃO DOS PRODUTOS EM JAVASCRIPT-->
+
+
+    <!--FOOTER WORK IN PROGRESS-->
+
+    <footer id="footer">
+      <div class="fbx1">
+        <img id="footerlogo" src="img/footer/Vector.png" alt="">
+      </div>
+      <div class="fbx2">
+
+      </div>
+      <div class="fbx3">
+
+      </div>
+      <div class="fbx4">
+        
+      </div>
+    </footer>
+      
+
+
+
+      <script src="script/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

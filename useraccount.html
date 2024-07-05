@@ -3,38 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PANKO BOX</title>
+    <title>CONTA: PANKO BOX</title>
     <link rel="shortcut icon" href="img/mascotepng.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="stylesheet" href="css/userstyle.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">PANKO B<img src="img/logo/mascotepng.png" width="32px" height="32px">X
-          </a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="foodmenu.html">Food Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="orders.html">Orders</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="promotions.html">Promotions</a>
-              </li>
-            </ul>
-        </nav>
-          </div>
-        </div>
-      </nav>
+  <!-- COMEÇO DA NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+      
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">PANKO B<img src="img/logo/mascote modified.png"width="64px" height="64px">X
+    </a>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <div class="itens-nav d-flex">
+      <ul class="navbar-nav me-auto mb-1 mb-lg-2">
+        <li class="nav-item">
+          <a class="nav-link text-border" href="index.html">Página Inicial</a>
+          <!-- <img src="img/icons/home icon.png" width="16px"> -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-border" href="foodmenu.html">Cardápio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-border" href="orders.html">Pedidos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-border" href="promotions.html">Promoções</a>
+        </li>
+      </ul>
+    </div>
+        <form class="d-flex">
+          <a href="useraccount.html" id="user">
+            <span>Usuário</span>
+          <img src="img/icons/icons8-user-100.png">
+        </a>
+          <a href="cart.html" id="cart">
+          <img src="img/icons/cart.png">
+        </a>
+        </form>
+  </div>
+</nav>
+<!-- FIM DA NAVBAR -->
+
+    <div class="container">
+
+      <div class="options">
+        <a href="#" id="historyuser">
+          <img src="img/icons/buy-history.png" alt="">
+          <span>HISTÓRICO DE COMPRAS</span>
+        </a>
+
+        <a href="#" id="cartuser">
+          <img src="img/icons/iconcartuser.png" alt="">
+          <span>CARRINHO DE COMPRAS</span>
+        </a>
+     </div>
+    </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>

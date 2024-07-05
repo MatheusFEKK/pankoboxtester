@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+/* # NAVBAR */
+
+.nav-item:hover {
+    transform: translateY(-0.5vh);
+}
+.nav-item {
+    transition: transform 0.3s;
+    a {
+        color: white;
+    }
+
+}
+
+.text-border{
+    /*A classe Text-border é responsável pela criação da animação da borda branca nos textos da navbar.*/
+    margin: 0;
+    display: inline-block;
+}
+
+.text-border:after {
+    display: block;
+    content: '';
+    transform: scaleX(0); 
+    border-bottom: 4px solid #FFECE5;
+    transition: transform 250ms ease-in-out;
+}
+
+.text-border:hover:after { transform: scaleX(1); }
+
+
+.navbar {
+    background: rgb(240,33,33);
+    background: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
+
+   .navbar-nav {
+    gap: 2rem;
+
+}
+
+    .navbar-brand {
+    margin-left: 10rem;
+}
+
+    img {
+    margin-left: -1rem;
+    margin-right: -1rem;
+
+}
+
+}
+
+.itens-nav {
+    margin-top: 0.5rem;
+    width: 55rem;
+
+    .nav-item {
+        margin-left: 5rem;
+    }
+}
+
+.d-flex {
+    padding: 0.5rem;
+    margin-left: 12rem;
+
+    #user {
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        flex-direction: row;
+        cursor: pointer;
+
+       img {
+        margin-left: 1rem;
+        width: 25px;
+        height: 25px;
+       }
+    }
+    
+    #cart {
+        padding-left: 5rem;
+        width: 7rem;
+}
+}
+
+/* #NAVBAR END */
+
+.caixona {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #F6F6F6;
+    width: 60rem;
+    height: 40rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 4px 0px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    background-color: #D7D7D7;
+    width: 50rem;
+    height: 4rem;
+    border-radius: 4rem;
+    margin-top: 2rem;
+    
+    .item1 {
+        padding: 2rem;
+
+        p {
+            display: inline;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-style: Italic;
+            margin-left: 23rem;
+            }
+    }
+    
+}
+
+.aside-content {
+    display: flex;
+    justify-content: center;
+    background-color: #F6F6F6;
+    width: 24rem;
+    height: 40rem;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 4px 0px;
+    margin-top: 2rem;
+
+    .resume-buy {
+        position: relative;
+        background-color: #9B9B9B;
+        width: 22rem;
+        height: 12rem;
+        top: 50%;
+        border-radius: 2rem;
+    }
+
+    .finish-buy {
+        display: flex;
+        justify-content: center;
+        background-color: #C32F2F;
+        width: 22rem;
+        height: 2.5rem;
+        margin-top: 13rem;
+        border-radius: 2rem;
+
+        span {
+            align-content: center;
+        }
+    }
+
+    .buy-more {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        width: 22rem;
+        height: 2.5rem;
+        margin-top: 1rem;
+        border-radius: 2rem;
+
+        span {
+            color: white;
+            align-content: center;
+        }
+    }
+}

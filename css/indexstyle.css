@@ -25,12 +25,6 @@
 
 }
 
-.receipt-background#blur.active{
-
-        filter: blur(20px);
-        background-color: rgba(0, 0, 0, 0);
-    }
-
 * {
     font-family: "Inter", sans-serif;
     font-weight: bold;
@@ -75,6 +69,11 @@
     gap: 2rem;
 
 }
+
+    button {
+        border: none;
+        background-color: transparent;
+    }
 
     .navbar-brand {
     margin-left: 10rem;
@@ -207,15 +206,15 @@
 /*RECEIPT*/
 
 .receipt-background{
-    border: 1px solid black;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80rem;
     padding: 2rem;
-    background-color: #f6f7fc;
-    border-radius: 2rem;
+    background-color: #FEFEFE;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
     animation: receipt_opening 1s ;
     
     h2{
@@ -245,6 +244,15 @@
         display: flex;
         flex-direction: row;
     
+    }
+    
+    .receipt-ingredient{
+        list-style-type: decimal;
+
+    }
+    .receipt-ingredient li{
+        padding: 10px;
+
     }
     
     
@@ -285,11 +293,13 @@
     
     }
 
-@keyframes receipt_opening{
+    @keyframes receipt_opening{
     from {opacity: 0.5;}
     to {opacity:1;}
 
-}
+    }
+
+
 
  
 
@@ -303,7 +313,6 @@
     margin-top: 100px;
     display: flex;
     width: 100%;
-    height: 33vh;
     padding: 0px;
     flex-direction: row;
     background: rgb(240,33,33);
@@ -312,19 +321,21 @@
 
 
 .fbx1{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 3vh;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
     text-align: start;
     flex: 50%;
 
         #footerlogo{
-            width: 40rem;
+            width: 35rem;
         }
 }
 .fbx2{
+    padding-top: 3rem;
     flex:25%;
-    
+    text-align: start;
+    justify-content: start;
 }
 .fbx3{
     flex:30%;
@@ -344,7 +355,9 @@
     font-size: 1.5em;
 }
 .titlefooter{
-    border-bottom: solid #FFECE5 2px;
+    font-size: 4rem;
+
+
 }
 .kadwa-bold {
     font-family: "Kadwa", serif;
@@ -352,7 +365,14 @@
     font-style: normal;
 }
 
-@media (max-width: 912px){
+@media (max-width: 912px){}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    
     #footer{
         flex-direction: column;
     }
@@ -368,6 +388,27 @@
     .fbx4{
         flex: 15%;
     }
+ }
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+ }
+
+@media all and (max-width: 480px) { 
+
 }
 
 /* FOOTER END */
+
+/* MENU DROP DOWN */
+
+.menu {
+    position: fixed;
+    width: 30rem;
+    height: 30rem;
+    background-color: black;
+
+    .menudrop {
+        
+    }
+}

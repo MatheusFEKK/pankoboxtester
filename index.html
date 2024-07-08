@@ -11,8 +11,119 @@
 <body>
 
   <!-- COMEÇO DA NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
+   <main id="background_page">
+
+     <nav class="navbar navbar-expand-lg">
+       
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <a class="navbar-brand" href="#">PANKO B<img src="img/logo/mascote modified.png"width="64px" height="64px">X
+           </a>
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+           <div class="itens-nav d-flex">
+             <ul class="navbar-nav me-auto mb-1 mb-lg-2">
+               <li class="nav-item">
+                 <a class="nav-link text-border" href="index.html">Página Inicial</a>
+                 <!-- <img src="img/icons/home icon.png" width="16px"> -->
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link text-border" href="foodmenu.html">Cardápio</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link text-border" href="orders.html">Pedidos</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link text-border" href="promotions.html">Promoções</a>
+               </li>
+             </ul>
+           </div>
+               <form class="d-flex">
+                 <a href="useraccount.html" id="user">
+                   <span>Usuário</span>
+                 <img src="img/icons/icons8-user-100.png">
+               </a>
+                 <a href="cart.html" id="cart">
+                 <img src="img/icons/cart.png">
+               </a>
+               </form>
+         </div>
+     </nav>
+       <!-- FIM DA NAVBAR -->
+ 
+       <!-- COMECO CAROUSEL -->
+       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+             <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+             <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+         </div>
+         <div class="carousel-inner">
+             <div class="carousel-item active">
+                 <img src="img/promocional/imagem promocional 1.png" class="first-slide d-block w-100 img-fluid" alt="...">
+             </div>
+             <div class="carousel-item">
+                 <img src="img/promocional/imagem-promocionak.png" class="second-slide d-block w-100 img-fluid" alt="...">
+             </div>
+             <div class="carousel-item">
+                 <img src="img/promocional/imagem promocional 1.png" class="third-slide d-block w-100 img-fluid" alt="...">
+             </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         </button>
+     </div>
+       <!-- TERMINO CAROUSEL -->
+ 
+       <!-- MENU CATEGORIAS, INICIO -->
+    
+       <div class="row menulayout">
+       <div class="col-4">
+ 
+         <div class="categorias">
+ 
+               <div class="bxcate">
+                 <a href="#">
+                   <img src="img/icons/icons categorias/sushi.png" class="img-fluid">
+                 </a>
+                 <h5>SUSHI</h5>
+               </div>
+             
+ 
+             
+               <div class="bxcate">
+                 <a href="#">
+                   <img src="img/icons/icons categorias/ramen.png"  class="img-fluid">
+                 </a>
+                 <h5>SUSHI</h5>
+               </div>
+             
+ 
+             
+               <div class="bxcate">
+                 <a href="#">
+                   <img src="img/icons/icons categorias/fried-chicken.png"  class="img-fluid">
+                 </a>
+                 <h5>SUSHI</h5>
+               </div>
+           
+ 
+            
+               <div class="bxcate">
+                 <a href="#">
+                   <img src="img/icons/icons categorias/tea-12.png"  class="img-fluid">
+                 </a>
+                 <h5>SUSHI</h5>
+               </div>
+            
+             </div>
+           </div>
+         </div>
       
+<<<<<<< HEAD
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,7 +137,12 @@
                 <!-- <img src="img/icons/home icon.png" width="16px"> -->
               </li>
               <li class="nav-item">
+                <button id="dropmenu" onmouseover="dropdownmenu()">
                 <a class="nav-link text-border" href="foodmenu.html">Cardápio</a>
+              </button>
+                <div id="menudrop">
+
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-border" href="orders.html">Pedidos</a>
@@ -120,96 +236,103 @@
             </div>
           </div>
         </div>
+=======
+>>>>>>> 9e5c7684a1839a9e88e155b5ac2b606cff149d87
      
-    
-    <!-- MENU CATEGORIAS, FIM -->
-    
-    <!-- PRODUTOS -->
-    <div class="exploring">
-          <div class="container">
-            <h1>Destaques</h1>
-          </div>
-          <div class="cardapio">
-            <div class="boxcardapio">
-              <a href="#">
-                <img src="img/pratos/Imagens prontas/prontosashimi.png">
-              </a>
-              <h5>KARAAGE</h5>
-              <h5>PREÇO: <br> R$54.90</h5>
-              <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
-            </div>
-            <div class="boxcardapio">
-              <a href="#">
-                <img src="img/pratos/Imagens prontas/prontosashimi.png">
-              </a>
-              <h5>SASHIMI</h5>
-              <h5>PREÇO: <br> R$54.90</h5>
-              <button class="buy display-flex">COMPRAR</button>
-            </div>
-            <div class="boxcardapio">
-              <a href="#">
-                <img src="img/pratos/Imagens prontas/prontosashimi.png">
-              </a>
-              <h5>SASHIMI</h5>
-              <h5>PREÇO: <br> R$54.90</h5>
-              <button class="buy display-flex">COMPRAR</button>
-            </div>
-            <div class="boxcardapio">
-              <a href="#">
-                <img src="img/pratos/Imagens prontas/prontosashimi.png">
-              </a>
-              <h5>SASHIMI</h5>
-              <h5>PREÇO: <br> R$54.90</h5>
-              <button class="buy display-flex">COMPRAR</button>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- PRODUTOS -->
-     <!--DESCRIÇÃO/TEMPLATE DOS PRODUTOS FEITO EM JAVASCRIPT-->
-       <!-- <div class="receipt-background">
-        <button class="button-close" onclick="receipt_close()">X</button>
-        <h2>Karaage</h2>
-         <div class="meal-product-details">
-           <img class="receipt-img" src="img/receipt/karaage_receita.png" style="height: 600px; width: 600px;">
-           <div class="receipt-description">
-            <aside>
-              <h3>Receita</h3>
-              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores illo consequuntur qui. Assumenda, ducimus harum in mollitia voluptates nisi blanditiis et laborum autem, magni qui vitae eveniet molestias soluta amet.</h4>
-            </aside>
-            <div id="button">
-              
-            </div>
-          </div>
-          
-        </div>
-        <div class="receipt-buy-button">
-          <a class="receipt-buy inert">Peça já</a>
-        </div>
-  
-      </div> -->
-
-     <!--FINALIZAÇÃO DA DESCRIÇÃO DOS PRODUTOS EM JAVASCRIPT-->
-
-
-    <!--FOOTER WORK IN PROGRESS-->
-
-    <footer id="footer">
-      <div class="fbx1">
-        <img id="footerlogo" src="img/footer/Vector.png" alt="">
-      </div>
-      <div class="fbx2">
-
-      </div>
-      <div class="fbx3">
-
-      </div>
-      <div class="fbx4">
-        
-      </div>
-    </footer>
+     <!-- MENU CATEGORIAS, FIM -->
+     
+     <!-- PRODUTOS -->
+     <div class="exploring">
+           <div class="container">
+             <h1>Destaques</h1>
+           </div>
+           <div class="cardapio">
+             <div class="boxcardapio">
+               <a onclick="karaage_receipt()">
+                 <img src="img/pratos/Imagens prontas/prontosashimi.png">
+               </a>
+               <h5>KARAAGE</h5>
+               <h5>PREÇO: <br> R$54.90</h5>
+               <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
+             </div>
+             <div class="boxcardapio">
+               <a href="#">
+                 <img src="img/pratos/Imagens prontas/prontosashimi.png">
+               </a>
+               <h5>SASHIMI</h5>
+               <h5>PREÇO: <br> R$54.90</h5>
+               <button class="buy display-flex">COMPRAR</button>
+             </div>
+             <div class="boxcardapio">
+               <a href="#">
+                 <img src="img/pratos/Imagens prontas/prontosashimi.png">
+               </a>
+               <h5>SASHIMI</h5>
+               <h5>PREÇO: <br> R$54.90</h5>
+               <button class="buy display-flex">COMPRAR</button>
+             </div>
+             <div class="boxcardapio">
+               <a href="#">
+                 <img src="img/pratos/Imagens prontas/prontosashimi.png">
+               </a>
+               <h5>SASHIMI</h5>
+               <h5>PREÇO: <br> R$54.90</h5>
+               <button class="buy display-flex">COMPRAR</button>
+             </div>
+           </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- PRODUTOS -->
+      <!--DESCRIÇÃO/TEMPLATE DOS PRODUTOS FEITO EM JAVASCRIPT-->
+        <!-- <div class="receipt-background">
+         <button class="button-close" onclick="receipt_close()">X</button>
+         <h2>Karaage</h2>
+          <div class="meal-product-details">
+            <img class="receipt-img" src="img/receipt/karaage_receita.png" style="height: 600px; width: 600px;">
+            <div class="receipt-description">
+             <aside>
+               <h3>Receita</h3>
+               <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores illo consequuntur qui. Assumenda, ducimus harum in mollitia voluptates nisi blanditiis et laborum autem, magni qui vitae eveniet molestias soluta amet.</h4>
+             </aside>
+             <div id="button">
+               
+             </div>
+           </div>
+           
+         </div>
+         <div class="receipt-buy-button">
+           <a class="receipt-buy inert">Peça já</a>
+         </div>
+   
+       </div> -->
+ 
+      <!--FINALIZAÇÃO DA DESCRIÇÃO DOS PRODUTOS EM JAVASCRIPT-->
+ 
+ 
+     <!--FOOTER WORK IN PROGRESS-->
+ 
+     <footer id="footer">
+       <div class="fbx1">
+         <img id="footerlogo" src="img/footer/Vector.png" alt="">
+       </div>
+       <div class="fbx2">
+        <h1 style="border-bottom: solid #FFECE5 5px; width: 9rem; margin-bottom: 2rem;" class="titlefooter footerfontcolor kadwa-bold">
+          Midia
+        </h1>
+        <h4 class="footertext kadwa-bold"><img src="img/footer/Twitter-X-Icon-PNG-758x473 1.png" alt=""> @PankoBox</h4>
+        <h4 class="footertext kadwa-bold"><img src="img/footer/Linkedin-Logo-Transparent-Image 1 (1).png" alt=""> PankoBox</h4>
+        <h4 class="footertext kadwa-bold"><img src="img/footer/R 1 (1).png" alt=""> @PankoBox</h4>
+       </div>
+       <div class="fbx3">
+ 
+       </div>
+       <div class="fbx4">
+         
+       </div>
+     </footer>
+   </main>
       
 
 

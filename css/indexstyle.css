@@ -28,97 +28,51 @@
 * {
     font-family: "Inter", sans-serif;
     font-weight: bold;
-    max-width: 100%;
 }
 
 /* # NAVBAR */
 
-.nav-item:hover {
-    transform: translateY(-0.5vh);
-}
-.nav-item {
-    transition: transform 0.3s;
-    a {
-        color: white;
-    }
-
-}
-
-.text-border{
-    /*A classe Text-border é responsável pela criação da animação da borda branca nos textos da navbar.*/
-    margin: 0;
-    display: inline-block;
-}
-
-.text-border:after {
-    display: block;
-    content: '';
-    transform: scaleX(0); 
-    border-bottom: 4px solid #FFECE5;
-    transition: transform 250ms ease-in-out;
-}
-
-.text-border:hover:after { transform: scaleX(1); }
-
-
 .navbar {
+    display: flex;
+    justify-content: center;
     background: rgb(240,33,33);
     background: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
 
-   .navbar-nav {
+
+}
+.brand-logo {
+    position: relative;
+    right: 12%;
+    span {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+
+.nav-link {
+    padding: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.chest-itens {
+    gap: 2rem;
+    .nav-icons {
+        display: inline-flex;
+    }
+
+}
+
+.user-a {
+    position: relative;
+    left: 30%;
     gap: 2rem;
 
-}
-
-    button {
-        border: none;
-        background-color: transparent;
-    }
-
-    .navbar-brand {
-    margin-left: 10rem;
-}
-
-    img {
-    margin-left: -1rem;
-    margin-right: -1rem;
-
-}
-
-}
-
-.itens-nav {
-    margin-top: 0.5rem;
-    width: 55rem;
-
-    .nav-item {
-        margin-left: 5rem;
-    }
-}
-
-.d-flex {
-    padding: 0.5rem;
-    margin-left: 12rem;
-
-    #user {
-        display: flex;
-        align-items: center;
-        color: white;
+    a {
         text-decoration: none;
-        flex-direction: row;
-        cursor: pointer;
-
-       img {
-        margin-left: 1rem;
-        width: 25px;
-        height: 25px;
-       }
+        color: white;
     }
-    
-    #cart {
-        padding-left: 5rem;
-        width: 7rem;
-}
 }
 
 /* #NAVBAR END */
@@ -127,24 +81,55 @@
 /* MENU START */
 
 .menulayout {
-    padding-top: 4rem;
+    display: flex;
+    margin-top: 4rem;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .categorias {
     display: flex;
-    
-    min-width: 30rem;
-    max-width: 50rem;
-    
-
     box-shadow: 0px 2px 4px 0px ;
     border-radius: 3.8vh;
     background-color: #F8F8F8;
+    width: 40rem;
     gap: 3rem;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
+
+    .kadwa-bold {
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 495px) and (max-width: 1024px) {
+   
+    .categorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 7rem;
+
+   }
+   .kadwa-bold {
+    text-align: center;
+    font-size: 9pt;
+}
+}
+
+@media all and (max-width: 480px) {
+    
+    .categorias {
+        gap: 5rem;
+        padding-right: 2rem;
+        .kadwa-bold {
+            text-align: center;
+            font-size: 8pt;
+        }
+    }
 }
 
 
@@ -184,11 +169,11 @@
 }
 }
 .bxcate {
-    width: 5vw;
 
     h5 {
         text-align: center;
     }
+
 }
 
 .buy {
@@ -258,6 +243,7 @@
     
     .receipt-img{
         border-radius: 30px;
+        width:37.5rem ; height:37.5rem ;
             
     }
     
@@ -300,7 +286,317 @@
     }
 
 
+    @media all and (min-width: 1024px) and (max-width: 1280px) {
 
+
+
+    }
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+
+        .receipt-background{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40rem;
+            padding: 2rem;
+            background-color: #FEFEFE;
+            border-radius: 3rem;
+            box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
+            overflow:hidden;
+            animation: receipt_opening 1s ;
+            
+            h2{
+                margin-bottom: 0.5rem;
+                    font-family: "Kadwa", sans-serif;
+                    text-align: center;
+                    font-weight: 700;
+                    
+                }
+                
+                h4{
+                    font-size: 1rem;
+                }
+            }
+            .button-close{
+                font-weight: 700;
+                width: 2rem;
+                height: 2rem;
+                float: right;
+                border: none;
+                border-radius: 0.5rem;
+                transition: all 0.3s;
+            }
+            .button-close:hover {
+                background-color: crimson;
+            }
+        
+            .meal-product-details{
+                display: flex;
+                flex-direction: row;
+            
+            }
+            
+            .receipt-ingredient{
+                list-style-type: decimal;
+        
+            }
+            .receipt-ingredient li{
+                padding: 5px;
+        
+            }
+            
+            
+            .receipt-img{
+                border-radius: 30px;
+                width:10rem ; height: 10rem;
+                    
+            }
+            
+            .receipt-description{
+                padding: 30px;
+            
+                    h3{
+                        text-align: center;
+                        
+                        
+                    }
+                    
+            }
+            
+            .receipt-buy-button{
+            
+                float: right;
+            
+            }
+            
+            .receipt-buy{
+                padding: 0.8rem;
+                width: 5em;
+                background-color: #FFA24B;
+                border: none;
+                border-radius: 1rem;
+                text-decoration: none;
+                color: black;
+            }
+            
+            .receipt-buy:hover{
+                cursor:pointer;
+            
+            
+            }
+        
+            @keyframes receipt_opening{
+            from {opacity: 0.5;}
+            to {opacity:1;}
+        
+            }
+    
+    }
+    
+    @media all and (min-width: 480px) and (max-width: 768px) {
+
+        .receipt-background{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40rem;
+            padding: 2rem;
+            background-color: #FEFEFE;
+            border-radius: 3rem;
+            box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
+            overflow:hidden;
+            animation: receipt_opening 1s ;
+            
+            h2{
+                margin-bottom: 0.5rem;
+                    font-family: "Kadwa", sans-serif;
+                    text-align: center;
+                    font-weight: 700;
+                    
+                }
+                
+                h4{
+                    font-size: 1rem;
+                }
+            }
+            .button-close{
+                font-weight: 700;
+                width: 2rem;
+                height: 2rem;
+                float: right;
+                border: none;
+                border-radius: 0.5rem;
+                transition: all 0.3s;
+            }
+            .button-close:hover {
+                background-color: crimson;
+            }
+        
+            .meal-product-details{
+                display: flex;
+                flex-direction: row;
+            
+            }
+            
+            .receipt-ingredient{
+                list-style-type: decimal;
+        
+            }
+            .receipt-ingredient li{
+                padding: 5px;
+        
+            }
+            
+            
+            .receipt-img{
+                border-radius: 30px;
+                width:15rem ; height: 15rem;
+                    
+            }
+            
+            .receipt-description{
+                padding: 30px;
+            
+                    h3{
+                        text-align: center;
+                        
+                        
+                    }
+                    
+            }
+            
+            .receipt-buy-button{
+            
+                float: right;
+            
+            }
+            
+            .receipt-buy{
+                padding: 0.8rem;
+                width: 5em;
+                background-color: #FFA24B;
+                border: none;
+                border-radius: 1rem;
+                text-decoration: none;
+                color: black;
+            }
+            
+            .receipt-buy:hover{
+                cursor:pointer;
+            
+            
+            }
+        
+            @keyframes receipt_opening{
+            from {opacity: 0.5;}
+            to {opacity:1;}
+        
+            }
+    
+    }
+    
+    @media all and (max-width: 480px) {
+        .receipt-background{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30rem;
+            padding: 2rem;
+            background-color: #FEFEFE;
+            border-radius: 3rem;
+            box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
+            animation: receipt_opening 1s ;
+            
+            h2{
+                margin-bottom: 0.5rem;
+                    font-family: "Kadwa", sans-serif;
+                    text-align: center;
+                    font-weight: 700;
+                    
+                }
+                
+                h4{
+                    font-size: 1rem;
+                }
+            }
+            .button-close{
+                font-weight: 700;
+                width: 2rem;
+                height: 2rem;
+                float: right;
+                border: none;
+                border-radius: 0.5rem;
+                transition: all 0.3s;
+            }
+            .button-close:hover {
+                background-color: crimson;
+            }
+        
+            .meal-product-details{
+                display: flex;
+                flex-direction: row;
+            
+            }
+            
+            .receipt-ingredient{
+                list-style-type: decimal;
+        
+            }
+            .receipt-ingredient li{
+                padding: 0px;
+        
+            }
+            
+            
+            .receipt-img{
+                border-radius: 30px;
+                width:10rem ; height: 10rem;
+                    
+            }
+            
+            .receipt-description{
+                padding: 30px;
+            
+                    h3{
+                        text-align: center;
+                        
+                        
+                    }
+                    
+            }
+            
+            .receipt-buy-button{
+            
+                float: right;
+            
+            }
+            
+            .receipt-buy{
+                padding: 0.8rem;
+                width: 5em;
+                background-color: #FFA24B;
+                border: none;
+                border-radius: 1rem;
+                text-decoration: none;
+                color: black;
+            }
+            
+            .receipt-buy:hover{
+                cursor:pointer;
+            
+            
+            }
+        
+            @keyframes receipt_opening{
+            from {opacity: 0.5;}
+            to {opacity:1;}
+        
+            }
+    }
+    
  
 
 
@@ -317,6 +613,7 @@
     flex-direction: row;
     background: rgb(240,33,33);
     background: linear-gradient(90deg, rgba(240,33,33,1) 40%, rgba(73,42,164,1) 100%);
+    padding-bottom: 50px;
 }
 
 
@@ -336,26 +633,32 @@
     flex:25%;
     text-align: start;
     justify-content: start;
+
+    h1{
+        border-bottom: solid #FFECE5 5px;width: 11rem;margin-bottom: 2rem;
+    }
 }
 .fbx3{
-    flex:30%;
+    padding-top: 3rem;
+    flex:25%;
+    h1{
+        border-bottom: solid #FFECE5 5px;width: 11rem;margin-bottom: 2rem;
+    }
 
     
 }
-.fbx4{
-    flex:15%;
-    
-}
 
-.footerfontcolor{
-    color: #FFECE5;
-}
 .footertext{
     color: #FFECE5;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-family: "Kadwa", serif;
+    font-weight: 800;
 }
 .titlefooter{
-    font-size: 4rem;
+    font-size: 3rem;
+    color: #FFECE5;
+    font-family: "Kadwa", serif;
+    font-weight: 800;
 
 
 }
@@ -365,9 +668,9 @@
     font-style: normal;
 }
 
-@media (max-width: 912px){}
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {
+    
     
 }
 
@@ -378,23 +681,134 @@
     }
     .fbx1{
         flex: 30%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 3rem;      /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+        padding-bottom: 0rem;
+        padding-left: 0rem;
+
+        #footerlogo{
+            width: 25rem;
+        }
+
+        
     }
     .fbx2{
         flex: 30%;
+        text-align: center;
+        justify-content: center;
+        border-bottom: #FEFEFE ; /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+        padding-top: 3rem;
+
+            h1{
+                width: auto;
+                border-top: solid #FFECE5 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+                border-bottom: none;
+            }
     }
     .fbx3{
         flex: 30%;
-    }
-    .fbx4{
-        flex: 15%;
+        text-align:center;
+        justify-content: center;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+        padding-top: 3rem;
+
+         h1{
+            border-top: solid #FFECE5 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+            border-bottom: none;
+            width: auto;
+         }
     }
  }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+    #footer{
+        flex-direction: column;
+    }
+    .fbx1{
+        flex: 30%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 3rem;      /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+        padding-bottom: 0rem;
+        padding-left: 0rem;
+
+        #footerlogo{
+            width: 25rem;
+        }
+
+        
+    }
+    .fbx2{
+        flex: 30%;
+        text-align: center;
+        justify-content: center;
+        border-bottom: #FEFEFE ; /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+        padding-top: 3rem;
+
+            h1{
+                width: auto;
+                border-top: solid #FFECE5 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+                border-bottom: none;
+            }
+    }
+    .fbx3{
+        flex: 30%;
+        text-align:center;
+        justify-content: center;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+        padding-top: 3rem;
+
+         h1{
+            border-top: solid #FFECE5 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+            border-bottom: none;
+            width: auto;
+         }
+    }
 
  }
 
 @media all and (max-width: 480px) { 
+    #footer{
+        flex-direction: column;
+    }
+    .fbx1{
+        flex: 30%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 3rem;      /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+        padding-bottom: 0rem;
+        padding-left: 0rem;
+
+        #footerlogo{
+            width: 25rem;
+        }
+
+        
+    }
+    .fbx2{
+        flex: 30%;
+        text-align: center;
+        justify-content: center;
+        border-bottom: #FEFEFE ; /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+        padding-top: 3rem;
+
+            h1{
+                width: auto;
+                border-top: solid #FFECE5 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+                border-bottom: none;
+            }
+    }
+    .fbx3{
+        flex: 30%;
+        text-align:center;
+        justify-content: center;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+        padding-top: 3rem;
+
+         h1{
+            border-top: solid #FFECE5 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+            border-bottom: none;
+            width: auto;
+         }
+    }
 
 }
 
@@ -402,13 +816,10 @@
 
 /* MENU DROP DOWN */
 
-.menu {
-    position: fixed;
+.menu{
+    position: absolute;
     width: 30rem;
     height: 30rem;
     background-color: black;
 
-    .menudrop {
-        
-    }
 }

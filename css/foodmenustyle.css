@@ -1,31 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
-
 
 * {
     font-family: "Inter", sans-serif;
@@ -41,87 +16,47 @@
 
 /* # NAVBAR */
 
-.nav-item:hover {
-    transform: translateY(-0.5vh);
-}
-.nav-item {
-    transition: transform 0.3s;
-    a {
-        color: white;
-    }
-
-}
-
-.text-border{
-    /*A classe Text-border é responsável pela criação da animação da borda branca nos textos da navbar.*/
-    margin: 0;
-    display: inline-block;
-}
-
-.text-border:after {
-    display: block;
-    content: '';
-    transform: scaleX(0); 
-    border-bottom: 4px solid #FFECE5;
-    transition: transform 250ms ease-in-out;
-}
-
-.text-border:hover:after { transform: scaleX(1); }
-
-
 .navbar {
+    display: flex;
+    justify-content: center;
     background: rgb(240,33,33);
     background: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
 
-   .navbar-nav {
+
+}
+.brand-logo {
+    position: relative;
+    right: 12%;
+    span {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+
+.nav-link {
+    padding: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.chest-itens {
+    gap: 2rem;
+    .nav-icons {
+        display: inline-flex;
+    }
+
+}
+
+.user-a {
+    position: relative;
+    left: 30%;
     gap: 2rem;
 
-}
-
-    .navbar-brand {
-    margin-left: 10rem;
-}
-
-    img {
-    margin-left: -1rem;
-    margin-right: -1rem;
-
-}
-
-}
-
-.itens-nav {
-    margin-top: 0.5rem;
-    width: 55rem;
-
-    .nav-item {
-        margin-left: 5rem;
-    }
-}
-
-.d-flex {
-    padding: 0.5rem;
-    margin-left: 12rem;
-
-    #user {
-        display: flex;
-        align-items: center;
-        color: white;
+    a {
         text-decoration: none;
-        flex-direction: row;
-        cursor: pointer;
-
-       img {
-        margin-left: 1rem;
-        width: 25px;
-        height: 25px;
-       }
+        color: white;
     }
-    
-    #cart {
-        padding-left: 5rem;
-        width: 7rem;
-}
 }
 
 /* #NAVBAR END */

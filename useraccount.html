@@ -10,55 +10,51 @@
 </head>
 <body>
   <!-- COMEÇO DA NAVBAR -->
-  <nav class="navbar navbar-expand-lg">
-      
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">PANKO B<img src="img/logo/mascote modified.png"width="64px" height="64px">X
-    </a>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <div class="itens-nav d-flex">
-      <ul class="navbar-nav me-auto mb-1 mb-lg-2">
-        <li class="nav-item">
-          <a class="nav-link text-border" href="index.html">Página Inicial</a>
-          <!-- <img src="img/icons/home icon.png" width="16px"> -->
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-border" href="foodmenu.html">Cardápio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-border" href="orders.html">Pedidos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-border" href="promotions.html">Promoções</a>
-        </li>
-      </ul>
-    </div>
-        <form class="d-flex">
-          <a href="useraccount.html" id="user">
-            <span>Usuário</span>
-          <img src="img/icons/icons8-user-100.png">
-        </a>
-          <a href="cart.html" id="cart">
-          <img src="img/icons/cart.png">
-        </a>
-        </form>
-  </div>
-</nav>
+  <div class="chest">
+    <nav class="navbar">
+        <div class="brand-logo">
+            <span>PANKO BOX</span>
+        </div>
+        <div class="chest-itens">
+            <ul class="nav-itens">
+                <li class="nav-icons">
+                    <a href="index.html" class="nav-link text-border">Página Inicial</a>
+                </li>
+                <li class="nav-icons">
+                    <a href="foodmenu.html" class="nav-link text-border">Cardápio</a>
+                </li>
+                <li class="nav-icons">
+                    <a href="orders.html" class="nav-link text-border">Pedidos</a>
+                </li>
+                <li class="nav-icons">
+                    <a href="promotions.html" class="nav-link text-border">Promoções</a>
+                </li>
+                <li class="nav-icons user-a">
+                    <a href="useraccount.html" class="user-a"> Usuário
+                        <img src="img/icons/icons8-user-100.png" width="25px">
+                    </a>
+                    <a href="cart.html" class="user-a">
+                        <img src="img/icons/cart.png" width="25px">
+                    </a>
+                  </li>
+              </ul>
+        </div>
+    </nav>
+</div>
 <!-- FIM DA NAVBAR -->
 
     <div class="container">
 
       <div class="options">
+        <h1>Nome</h1>
         <a href="#" id="historyuser">
           <img src="img/icons/buy-history.png" alt="">
-          <span>HISTÓRICO DE COMPRAS</span>
+          <span>Histórico de compras</span>
         </a>
 
-        <a href="#" id="cartuser">
+        <a href="cart.html" id="cartuser">
           <img src="img/icons/iconcartuser.png" alt="">
-          <span>CARRINHO DE COMPRAS</span>
+          <span>Carrinho de compra</span>
         </a>
      </div>
     </div>

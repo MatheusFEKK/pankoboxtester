@@ -32,10 +32,17 @@ body {
         border-radius: 2rem;
         border: none;
         width: 40rem;
-        background-color: black;
+        background-color: #d4d4d4;
         padding: 1rem;
         margin: 0.5rem;
     }
+
+}
+
+span {
+    font-size: 20pt;
+    position: relative;
+    right: 5%;
 }
 
 .signup {
@@ -52,7 +59,7 @@ body {
         border-radius: 2rem;
         border: none;
         width: 40rem;
-        background-color: black;
+        background-color: #d4d4d4;
         padding: 1rem;
         margin: 0.5rem;
     }

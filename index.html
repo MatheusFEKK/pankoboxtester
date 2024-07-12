@@ -11,44 +11,40 @@
 <body>
 
   <!-- COMEÇO DA NAVBAR -->
-   <main id="background_page">
+<main id="background_page"> <!-- NÃO EXCLUIR! -->
 
-     <nav class="navbar navbar-expand-lg">
-       
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <a class="navbar-brand" href="#">PANKO B<img src="img/logo/mascote modified.png"width="64px" height="64px">X
-           </a>
-         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-           <div class="itens-nav d-flex">
-             <ul class="navbar-nav me-auto mb-1 mb-lg-2">
-               <li class="nav-item">
-                 <a class="nav-link text-border" href="index.html">Página Inicial</a>
-                 <!-- <img src="img/icons/home icon.png" width="16px"> -->
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link text-border" href="foodmenu.html">Cardápio</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link text-border" href="orders.html">Pedidos</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link text-border" href="promotions.html">Promoções</a>
-               </li>
-             </ul>
-           </div>
-               <form class="d-flex">
-                 <a href="useraccount.html" id="user">
-                   <span>Usuário</span>
-                 <img src="img/icons/icons8-user-100.png">
-               </a>
-                 <a href="cart.html" id="cart">
-                 <img src="img/icons/cart.png">
-               </a>
-               </form>
-         </div>
-     </nav>
+
+  <div class="chest">
+    <nav class="navbar">
+        <div class="brand-logo">
+            <span>PANKO BOX</span>
+        </div>
+        <div class="chest-itens">
+            <ul class="nav-itens">
+                <li class="nav-icons">
+                    <a href="index.html" class="nav-link text-border">Página Inicial</a>
+                </li>
+                <li class="nav-icons">
+                    <a href="foodmenu.html" class="nav-link text-border">Cardápio</a>
+                </li>
+                <li class="nav-icons">
+                    <a href="orders.html" class="nav-link text-border">Pedidos</a>
+                </li>
+                <li class="nav-icons">
+                    <a href="#COMBOSPROMOCOES" class="nav-link text-border">Promoções</a>
+                </li>
+                <li class="nav-icons user-a">
+                    <a href="useraccount.html" class="user-a"> Usuário
+                        <img src="img/icons/icons8-user-100.png" width="25px">
+                    </a>
+                    <a href="cart.html" class="user-a">
+                        <img src="img/icons/cart.png" width="25px">
+                    </a>
+                  </li>
+              </ul>
+        </div>
+    </nav>
+  </div>
        <!-- FIM DA NAVBAR -->
  
        <!-- COMECO CAROUSEL -->
@@ -80,164 +76,46 @@
  
        <!-- MENU CATEGORIAS, INICIO -->
     
-       <div class="row menulayout">
-       <div class="col-4">
- 
+       <div class="menulayout">
          <div class="categorias">
  
                <div class="bxcate">
                  <a href="#">
                    <img src="img/icons/icons categorias/sushi.png" class="img-fluid">
                  </a>
-                 <h5>SUSHI</h5>
+                 <h5 class="kadwa-bold">SUSHI</h5>
                </div>
              
  
              
                <div class="bxcate">
                  <a href="#">
-                   <img src="img/icons/icons categorias/ramen.png"  class="img-fluid">
+                   <img src="img/icons/icons categorias/ramen.png" class="img-fluid">
                  </a>
-                 <h5>SUSHI</h5>
+                 <h5 class="kadwa-bold">LAMEN</h5>
                </div>
              
  
              
                <div class="bxcate">
                  <a href="#">
-                   <img src="img/icons/icons categorias/fried-chicken.png"  class="img-fluid">
+                   <img src="img/icons/icons categorias/fried-chicken.png" class="img-fluid">
                  </a>
-                 <h5>SUSHI</h5>
+                 <h5 class="kadwa-bold">FRANGO</h5>
                </div>
            
  
             
                <div class="bxcate">
                  <a href="#">
-                   <img src="img/icons/icons categorias/tea-12.png"  class="img-fluid">
+                   <img src="img/icons/icons categorias/tea-12.png" class="img-fluid">
                  </a>
-                 <h5>SUSHI</h5>
+                 <h5 class="kadwa-bold">BEBIDAS</h5>
                </div>
             
              </div>
-           </div>
          </div>
       
-<<<<<<< HEAD
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">PANKO B<img src="img/logo/mascote modified.png"width="64px" height="64px">X
-          </a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <div class="itens-nav d-flex">
-            <ul class="navbar-nav me-auto mb-1 mb-lg-2">
-              <li class="nav-item">
-                <a class="nav-link text-border" href="index.html">Página Inicial</a>
-                <!-- <img src="img/icons/home icon.png" width="16px"> -->
-              </li>
-              <li class="nav-item">
-                <button id="dropmenu" onmouseover="dropdownmenu()">
-                <a class="nav-link text-border" href="foodmenu.html">Cardápio</a>
-              </button>
-                <div id="menudrop">
-
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-border" href="orders.html">Pedidos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-border" href="promotions.html">Promoções</a>
-              </li>
-            </ul>
-          </div>
-              <form class="d-flex">
-                <a href="useraccount.html" id="user">
-                  <span>Usuário</span>
-                <img src="img/icons/icons8-user-100.png">
-              </a>
-                <a href="cart.html" id="cart">
-                <img src="img/icons/cart.png">
-              </a>
-              </form>
-        </div>
-    </nav>
-      <!-- FIM DA NAVBAR -->
-
-      <!-- COMECO CAROUSEL -->
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/promocional/imagem promocional 1.png" class="first-slide d-block w-100 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/promocional/imagem-promocionak.png" class="second-slide d-block w-100 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/promocional/imagem promocional 1.png" class="third-slide d-block w-100 img-fluid" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-    </div>
-      <!-- TERMINO CAROUSEL -->
-
-      <!-- MENU CATEGORIAS, INICIO -->
-   
-      <div class="row menulayout">
-      <div class="col-4">
-
-        <div class="categorias">
-
-              <div class="bxcate">
-                <a href="#">
-                  <img src="img/icons/icons categorias/sushi.png" class="img-fluid">
-                </a>
-                <h5>SUSHI</h5>
-              </div>
-            
-
-            
-              <div class="bxcate">
-                <a href="#">
-                  <img src="img/icons/icons categorias/ramen.png"  class="img-fluid">
-                </a>
-                <h5>SUSHI</h5>
-              </div>
-            
-
-            
-              <div class="bxcate">
-                <a href="#">
-                  <img src="img/icons/icons categorias/fried-chicken.png"  class="img-fluid">
-                </a>
-                <h5>SUSHI</h5>
-              </div>
-          
-
-           
-              <div class="bxcate">
-                <a href="#">
-                  <img src="img/icons/icons categorias/tea-12.png"  class="img-fluid">
-                </a>
-                <h5>SUSHI</h5>
-              </div>
-           
-            </div>
-          </div>
-        </div>
-=======
->>>>>>> 9e5c7684a1839a9e88e155b5ac2b606cff149d87
      
      <!-- MENU CATEGORIAS, FIM -->
      
@@ -248,19 +126,27 @@
            </div>
            <div class="cardapio">
              <div class="boxcardapio">
-               <a onclick="karaage_receipt()">
-                 <img src="img/pratos/Imagens prontas/prontosashimi.png">
-               </a>
-               <h5>KARAAGE</h5>
-               <h5>PREÇO: <br> R$54.90</h5>
+               <a onclick="karaage_receipt()" style="cursor: pointer;">
+                 <img src="img/pratos/Imagens prontas/karaage Frango.png">
+                </a>
+                <h5>KARAAGE</h5>
+                <h5>R$54,90</h5>
                <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
              </div>
              <div class="boxcardapio">
                <a href="#">
+                 <img src="img/pratos/Imagens prontas/prontoyakisoba.png">
+               </a>
+               <h5>YAKISOBA</h5>
+               <h5>R$30,90</h5>
+               <button class="buy display-flex">COMPRAR</button>
+             </div>
+             <div class="boxcardapio">
+               <a href="#">
                  <img src="img/pratos/Imagens prontas/prontosashimi.png">
                </a>
-               <h5>SASHIMI</h5>
-               <h5>PREÇO: <br> R$54.90</h5>
+               <h5>Sashimi</h5>
+               <h5>R$54,90</h5>
                <button class="buy display-flex">COMPRAR</button>
              </div>
              <div class="boxcardapio">
@@ -268,15 +154,7 @@
                  <img src="img/pratos/Imagens prontas/prontosashimi.png">
                </a>
                <h5>SASHIMI</h5>
-               <h5>PREÇO: <br> R$54.90</h5>
-               <button class="buy display-flex">COMPRAR</button>
-             </div>
-             <div class="boxcardapio">
-               <a href="#">
-                 <img src="img/pratos/Imagens prontas/prontosashimi.png">
-               </a>
-               <h5>SASHIMI</h5>
-               <h5>PREÇO: <br> R$54.90</h5>
+               <h5>R$54,90</h5>
                <button class="buy display-flex">COMPRAR</button>
              </div>
            </div>
@@ -284,6 +162,233 @@
          </div>
        </div>
      </div>
+
+     <!--COMBOS E PROMOÇÕES-->
+
+     <div class="exploring">
+      <div class="container">
+        <h1 id="COMBOSPROMOCOES">Combos e promoções</h1>
+      </div>
+      <div class="cardapio">
+        <div class="boxcardapio">
+          <a onclick="karaage_receipt()">
+            <img src="img/pratos/Imagens prontas/Combo Urumaki_Miso_Pepsi.png" style="width: 8rem; border-radius: 1rem;">
+           </a>
+           <h5>URUMAKI...</h5>
+           <h5>R$54,90</h5>
+          <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
+        </div>
+        <div class="boxcardapio">
+          <a href="#">
+            <img src="img/pratos/Imagens prontas/Combo Torikatsu_Pepsi.png" style="width: 8rem; border-radius: 1rem;">
+          </a>
+          <h5>TORIKATSU...</h5>
+          <h5>R$30,90</h5>
+          <button class="buy display-flex">COMPRAR</button>
+        </div>
+        <div class="boxcardapio">
+          <a href="#">
+            <img src="img/pratos/Imagens prontas/Uramaki sushi peixe.png">
+          </a>
+          <h5>URUMAKI</h5>
+          <h5>R$10,90<span style="font-style:oblique;">(-20%)</span></h5>
+          <button class="buy display-flex">COMPRAR</button>
+        </div>
+        <div class="boxcardapio">
+          <a href="#">
+            <img src="img/pratos/Imagens prontas/Tempurá peixe.png">
+          </a>
+          <h5>TEMPURÁ</h5>
+          <h5>R$40,15<span style="font-style:oblique;">(-20%)</span></h5>
+          <button class="buy display-flex">COMPRAR</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--LÁMEN-->
+
+<div class="exploring">
+  <div class="container">
+    <h1>Lámen</h1>
+  </div>
+  <div class="cardapio">
+    <div class="boxcardapio">
+      <a onclick="shoyu_receipt()" style="cursor: pointer;">
+        <img src="img/pratos/Imagens prontas/Shoyu Lamen.png">
+       </a>
+       <h5>SHOYU LAMEN</h5>
+       <h5>R$39.50</h5>
+      <button onclick="shoyu_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a onclick="yakisoba_receipt()" style="cursor: pointer;">
+        <img src="img/pratos/Imagens prontas/prontoyakisoba.png">
+      </a>
+      <h5>YAKISOBA</h5>
+      <h5>R$30,90</h5>
+      <button onclick="yakisoba_receipt()" class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a href="#">
+        <img src="img/pratos/Imagens prontas/lamen shio.png">
+      </a>
+      <h5>SHIO</h5>
+      <h5>R$10,90</h5>
+      <button class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a href="#">
+        <img src="img/pratos/Imagens prontas/Miso Lamen.png">
+      </a>
+      <h5>MISO</h5>
+      <h5>R$40,15</h5>
+      <button class="buy display-flex">COMPRAR</button>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!--Frango-->
+
+<div class="exploring">
+  <div class="container">
+    <h1>Frango</h1>
+  </div>
+  <div class="cardapio">
+    <div class="boxcardapio">
+      <a onclick="karaage_receipt()" style="cursor: pointer;">
+        <img src="img/pratos/Imagens prontas/karaage Frango.png">
+       </a>
+       <h5>KARAAGE</h5>
+       <h5>R$39.50</h5>
+      <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a onclick="teriyaki_receipt()" style="cursor: pointer;">
+        <img src="img/pratos/Imagens prontas/Teriyaki Frango.png">
+      </a>
+      <h5>TERIYAKI</h5>
+      <h5>R$30,90</h5>
+      <button onclick="teriyaki_receipt()" class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a onclick="tonkatsu_receipt()" style="cursor: pointer;">
+        <img src="img/pratos/Imagens prontas/Tonkatsu Frango.png">
+      </a>
+      <h5>TONKATSU</h5>
+      <h5>R$10,90</h5>
+      <button onclick="tonkatsu_receipt()" class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a onclick="yakitori_receipt()" style="cursor: pointer;">
+        <img src="img/pratos/Imagens prontas/Yakitori Frango.png">
+      </a>
+      <h5>YAKITORI</h5>
+      <h5>R$40,15</h5>
+      <button onclick="yakitori_receipt()"  class="buy display-flex">COMPRAR</button>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!--PEIXES-->
+
+<div class="exploring">
+  <div class="container">
+    <h1>Peixes</h1>
+  </div>
+  <div class="cardapio">
+    <div class="boxcardapio">
+      <a onclick="karaage_receipt()">
+        <img src="img/pratos/Imagens prontas/prontosashimi.png">
+       </a>
+       <h5>SASHIMI</h5>
+       <h5>R$39.50</h5>
+      <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a href="#">
+        <img src="img/pratos/Imagens prontas/Tempurá peixe.png">
+      </a>
+      <h5>TEMPURÁ</h5>
+      <h5>R$40,15<span style="font-style:oblique;">(-20%)</span></h5>
+      <button class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a href="#">
+        <img src="img/pratos/Imagens prontas/Uramaki sushi peixe.png">
+      </a>
+      <h5>URUMAKI</h5>
+      <h5>R$10,90<span style="font-style:oblique;">(-20%)</span></h5>
+      <button class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a href="#">
+        <img src="img/pratos/Imagens prontas/teppanyaki peixe.png">
+      </a>
+      <h5>TEPPANYAKI</h5>
+      <h5>R$40,15</h5>
+      <button class="buy display-flex">COMPRAR</button>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!--BEBIDAS-->
+
+<div class="exploring">
+  <div class="container">
+    <h1>Bebidas</h1>
+  </div>
+  <div class="cardapio">
+    <div class="boxcardapio">
+      <a onclick="karaage_receipt()">
+        <img src="img/pratos/Imagens prontas/Fanta Bebidas.png">
+       </a>
+       <h5>FANTA</h5>
+       <h5>R$6,00</h5>
+      <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a href="#">
+        <img src="img/pratos/Imagens prontas/Pepsi Bebidas.png">
+      </a>
+      <h5>PEPSI</h5>
+      <h5>R$7,50</h5>
+      <button class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a href="#">
+        <img src="img/pratos/Imagens prontas/coca cola bebidas.png">
+      </a>
+      <h5>COCA COLA</h5>
+      <h5>R$10,90</h5>
+      <button class="buy display-flex">COMPRAR</button>
+    </div>
+    <div class="boxcardapio">
+      <a href="#">
+        <img src="img/pratos/Imagens prontas/Ryokucha Bebidas.png">
+      </a>
+      <h5>RYOKUCHA</h5>
+      <h5>R$6,50</h5>
+      <button class="buy display-flex">COMPRAR</button>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+
      <!-- PRODUTOS -->
       <!--DESCRIÇÃO/TEMPLATE DOS PRODUTOS FEITO EM JAVASCRIPT-->
         <!-- <div class="receipt-background">
@@ -318,26 +423,24 @@
          <img id="footerlogo" src="img/footer/Vector.png" alt="">
        </div>
        <div class="fbx2">
-        <h1 style="border-bottom: solid #FFECE5 5px; width: 9rem; margin-bottom: 2rem;" class="titlefooter footerfontcolor kadwa-bold">
-          Midia
-        </h1>
-        <h4 class="footertext kadwa-bold"><img src="img/footer/Twitter-X-Icon-PNG-758x473 1.png" alt=""> @PankoBox</h4>
-        <h4 class="footertext kadwa-bold"><img src="img/footer/Linkedin-Logo-Transparent-Image 1 (1).png" alt=""> PankoBox</h4>
-        <h4 class="footertext kadwa-bold"><img src="img/footer/R 1 (1).png" alt=""> @PankoBox</h4>
+        <h1 class="titlefooter ">Midia</h1>
+        <h4 class="footertext "><img src="img/footer/Twitter-X-Icon-PNG-758x473 1.png" alt=""> @PankoBox</h4>
+        <h4 class="footertext "><img src="img/footer/Linkedin-Logo-Transparent-Image 1 (2).png" alt=""> PankoBox</h4>
+        <h4 class="footertext "><img src="img/footer/R 1 (1).png" alt=""> @PankoBox</h4>
        </div>
        <div class="fbx3">
+        <h1 class="titlefooter">Contatos </h1>
+        <h4 class="footertext">pankobox@gmail.com</h4>
+        <h4 class="footertext">+55 19xxxxxxxx</h4>
  
-       </div>
-       <div class="fbx4">
-         
-       </div>
+
      </footer>
-   </main>
+</main>
       
 
 
 
       <script src="script/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

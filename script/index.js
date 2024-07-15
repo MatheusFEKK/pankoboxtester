@@ -141,7 +141,7 @@ function urumaki_receipt(){
 }
 
 function teppanyaki_receipt(){
-    let teppanyakireceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Teppanyaki</h2><div class='meal-product-details'><img class='receipt-img' src='/img/receipt/teppanyaki_receipt.jpg'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>2 postas de salmão</li><li>Sal e pimenta-do-reino a gosto</li><li>Gengibre em pó</li><li>Azeite</li><li>Manteiga</li><li>Legumes variados (cenoura, brócolis, pimentão, vagem etc.)</li><li>Alho picado</li><li>Shoyu</li><li>Saquê Mirim.</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let teppanyakireceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Teppanyaki</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/teppanyaki_receipt.jpg'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>2 postas de salmão</li><li>Sal e pimenta-do-reino a gosto</li><li>Gengibre em pó</li><li>Azeite</li><li>Manteiga</li><li>Legumes variados (cenoura, brócolis, pimentão, vagem etc.)</li><li>Alho picado</li><li>Shoyu</li><li>Saquê Mirim.</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  teppanyakireceipt;

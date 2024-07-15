@@ -45,7 +45,7 @@
     right: 12%;
     span {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -65,7 +65,6 @@
 }
 
 .user-a {
-    position: relative;
     left: 30%;
     gap: 2rem;
 
@@ -503,7 +502,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 30rem;
+            width: 25rem;
             padding: 2rem;
             background-color: #FEFEFE;
             border-radius: 3rem;
@@ -519,13 +518,13 @@
                 }
                 
                 h4{
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                 }
             }
             .button-close{
                 font-weight: 700;
-                width: 2rem;
-                height: 2rem;
+                width: 3rem;
+                height: 3rem;
                 float: right;
                 border: none;
                 border-radius: 0.5rem;
@@ -553,12 +552,12 @@
             
             .receipt-img{
                 border-radius: 30px;
-                width:10rem ; height: 10rem;
+                width:7.5rem ; height: 7.5rem;
                     
             }
             
             .receipt-description{
-                padding: 30px;
+                padding: 10px;
             
                     h3{
                         text-align: center;
@@ -616,7 +615,12 @@
     padding-bottom: 50px;
 }
 
-
+.footer-img{
+    width: 3rem;
+}
+#linkedin{
+    margin-right: 1rem; ;
+}
 .fbx1{
     padding-top: 6rem;
     padding-bottom: 5rem;
@@ -693,6 +697,13 @@
 
         
     }
+    .footer-img{
+        width: 3rem;
+
+    }
+    #linkedin{
+        margin-right: 1rem; ;
+    }
     .fbx2{
         flex: 30%;
         text-align: center;
@@ -738,6 +749,13 @@
 
         
     }
+    .footer-img{
+        width: 3rem;
+
+    }
+    #linkedin{
+        margin-right: 1rem;
+    }
     .fbx2{
         flex: 30%;
         text-align: center;
@@ -779,10 +797,17 @@
         padding-left: 0rem;
 
         #footerlogo{
-            width: 25rem;
+            width: 20rem;
         }
 
         
+    }
+    .footer-img{
+        width: 3rem;
+
+    }
+    #linkedin{
+        margin-right: 1rem; ;
     }
     .fbx2{
         flex: 30%;

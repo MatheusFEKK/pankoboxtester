@@ -14,10 +14,10 @@
 <main id="background_page"> <!-- NÃO EXCLUIR! -->
 
 
-  <div class="chest">
+  <div class="box">
     <nav class="navbar">
         <div class="brand-logo">
-            <span>PANKO BOX</span>
+            <span><img src="img/logo/Vector (1).png" alt=""></span>
         </div>
         <div class="chest-itens">
             <ul class="nav-itens">
@@ -25,7 +25,7 @@
                     <a href="index.html" class="nav-link text-border">Página Inicial</a>
                 </li>
                 <li class="nav-icons">
-                    <a href="foodmenu.html" class="nav-link text-border">Cardápio</a>
+                    <a href="#LAMENSEC" class="nav-link text-border">Cardápio</a>
                 </li>
                 <li class="nav-icons">
                     <a href="orders.html" class="nav-link text-border">Pedidos</a>
@@ -80,37 +80,37 @@
          <div class="categorias">
  
                <div class="bxcate">
-                 <a href="#">
+                 <a href="#PEIXESEC">
                    <img src="img/icons/icons categorias/sushi.png" class="img-fluid">
                  </a>
-                 <h5 class="kadwa-bold">SUSHI</h5>
+                 <h5 class="kadwa-bold" style="font-weight: 800;">PEIXES</h5>
                </div>
              
  
              
                <div class="bxcate">
-                 <a href="#">
+                 <a href="#LAMENSEC">
                    <img src="img/icons/icons categorias/ramen.png" class="img-fluid">
                  </a>
-                 <h5 class="kadwa-bold">LAMEN</h5>
+                 <h5 class="kadwa-bold" style="font-weight: 800;">LAMEN</h5>
                </div>
              
  
              
                <div class="bxcate">
-                 <a href="#">
+                 <a href="#FRANGOSEC">
                    <img src="img/icons/icons categorias/fried-chicken.png" class="img-fluid">
                  </a>
-                 <h5 class="kadwa-bold">FRANGO</h5>
+                 <h5 class="kadwa-bold" style="font-weight: 800;">FRANGO</h5>
                </div>
            
  
             
                <div class="bxcate">
-                 <a href="#">
+                 <a href="#BEBIDASEC">
                    <img src="img/icons/icons categorias/tea-12.png" class="img-fluid">
                  </a>
-                 <h5 class="kadwa-bold">BEBIDAS</h5>
+                 <h5 class="kadwa-bold" style="font-weight: 800;">BEBIDAS</h5>
                </div>
             
              </div>
@@ -130,33 +130,33 @@
                  <img src="img/pratos/Imagens prontas/karaage Frango.png">
                 </a>
                 <h5>KARAAGE</h5>
-                <h5>R$54,90</h5>
+                <h5>R$34,50</h5>
                <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
              </div>
              <div class="boxcardapio">
-               <a href="#">
-                 <img src="img/pratos/Imagens prontas/prontoyakisoba.png">
-               </a>
-               <h5>YAKISOBA</h5>
-               <h5>R$30,90</h5>
-               <button class="buy display-flex">COMPRAR</button>
-             </div>
-             <div class="boxcardapio">
-               <a href="#">
-                 <img src="img/pratos/Imagens prontas/prontosashimi.png">
-               </a>
-               <h5>Sashimi</h5>
-               <h5>R$54,90</h5>
-               <button class="buy display-flex">COMPRAR</button>
-             </div>
-             <div class="boxcardapio">
-               <a href="#">
-                 <img src="img/pratos/Imagens prontas/prontosashimi.png">
-               </a>
-               <h5>SASHIMI</h5>
-               <h5>R$54,90</h5>
-               <button class="buy display-flex">COMPRAR</button>
-             </div>
+              <a onclick="shio_receipt()" style="cursor: pointer;">
+                <img src="img/pratos/Imagens prontas/lamen shio.png">
+              </a>
+              <h5>SHIO</h5>
+              <h5>R$55,90</h5>
+              <button onclick="shio_receipt()" class="buy display-flex">COMPRAR</button>
+            </div>
+            <div class="boxcardapio">
+              <a onclick="yakisoba_receipt()" style="cursor: pointer;">
+                <img src="img/pratos/Imagens prontas/prontoyakisoba.png">
+              </a>
+              <h5>YAKISOBA</h5>
+              <h5>R$30,90</h5>
+              <button onclick="yakisoba_receipt()" class="buy display-flex">COMPRAR</button>
+            </div>
+            <div class="boxcardapio">
+              <a onclick="tempura_receipt()" style="cursor: pointer;">
+                <img src="img/pratos/Imagens prontas/Tempurá peixe.png">
+              </a>
+              <h5>TEMPURÁ</h5>
+              <h5>R$40,15<span style="font-style:oblique;">(-20%)</span></h5>
+              <button onclick="tempura_receipt()" class="buy display-flex">COMPRAR</button>
+            </div>
            </div>
            </div>
          </div>
@@ -171,36 +171,36 @@
       </div>
       <div class="cardapio">
         <div class="boxcardapio">
-          <a onclick="karaage_receipt()">
+          <a onclick="urumakimisopepsi_receipt()" style="cursor: pointer;">
             <img src="img/pratos/Imagens prontas/Combo Urumaki_Miso_Pepsi.png" style="width: 8rem; border-radius: 1rem;">
            </a>
            <h5>URUMAKI...</h5>
-           <h5>R$54,90</h5>
-          <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
+           <h5>R$57,90</h5>
+          <button onclick="urumakimisopepsi_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
         </div>
         <div class="boxcardapio">
-          <a href="#">
+          <a onclick="tonkatsupepsi_receipt()" style="cursor: pointer;">
             <img src="img/pratos/Imagens prontas/Combo Torikatsu_Pepsi.png" style="width: 8rem; border-radius: 1rem;">
           </a>
-          <h5>TORIKATSU...</h5>
+          <h5>TONKATSU...</h5>
           <h5>R$30,90</h5>
-          <button class="buy display-flex">COMPRAR</button>
+          <button class="buy display-flex" onclick="tonkatsupepsi_receipt()">COMPRAR</button>
         </div>
         <div class="boxcardapio">
-          <a href="#">
+          <a onclick="urumaki_receipt()" style="cursor: pointer;">
             <img src="img/pratos/Imagens prontas/Uramaki sushi peixe.png">
           </a>
           <h5>URUMAKI</h5>
           <h5>R$10,90<span style="font-style:oblique;">(-20%)</span></h5>
-          <button class="buy display-flex">COMPRAR</button>
+          <button onclick="urumaki_receipt()" class="buy display-flex">COMPRAR</button>
         </div>
         <div class="boxcardapio">
-          <a href="#">
+          <a onclick="tempura_receipt()" style="cursor: pointer;">
             <img src="img/pratos/Imagens prontas/Tempurá peixe.png">
           </a>
           <h5>TEMPURÁ</h5>
           <h5>R$40,15<span style="font-style:oblique;">(-20%)</span></h5>
-          <button class="buy display-flex">COMPRAR</button>
+          <button onclick="tempura_receipt()" class="buy display-flex">COMPRAR</button>
         </div>
       </div>
       </div>
@@ -212,7 +212,7 @@
 
 <div class="exploring">
   <div class="container">
-    <h1>Lámen</h1>
+    <h1 id="LAMENSEC">Lámen</h1>
   </div>
   <div class="cardapio">
     <div class="boxcardapio">
@@ -220,7 +220,7 @@
         <img src="img/pratos/Imagens prontas/Shoyu Lamen.png">
        </a>
        <h5>SHOYU LAMEN</h5>
-       <h5>R$39.50</h5>
+       <h5>R$39,50</h5>
       <button onclick="shoyu_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
@@ -232,20 +232,20 @@
       <button onclick="yakisoba_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
-      <a href="#">
+      <a onclick="shio_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/lamen shio.png">
       </a>
       <h5>SHIO</h5>
-      <h5>R$10,90</h5>
-      <button class="buy display-flex">COMPRAR</button>
+      <h5>R$40,50</h5>
+      <button onclick="shio_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
-      <a href="#">
+      <a onclick="miso_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/Miso Lamen.png">
       </a>
       <h5>MISO</h5>
-      <h5>R$40,15</h5>
-      <button class="buy display-flex">COMPRAR</button>
+      <h5>R$46,00</h5>
+      <button onclick="miso_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
   </div>
   </div>
@@ -257,7 +257,7 @@
 
 <div class="exploring">
   <div class="container">
-    <h1>Frango</h1>
+    <h1 id="FRANGOSEC">Frango</h1>
   </div>
   <div class="cardapio">
     <div class="boxcardapio">
@@ -265,7 +265,7 @@
         <img src="img/pratos/Imagens prontas/karaage Frango.png">
        </a>
        <h5>KARAAGE</h5>
-       <h5>R$39.50</h5>
+       <h5>R$34,50</h5>
       <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
@@ -273,7 +273,7 @@
         <img src="img/pratos/Imagens prontas/Teriyaki Frango.png">
       </a>
       <h5>TERIYAKI</h5>
-      <h5>R$30,90</h5>
+      <h5>R$34,90</h5>
       <button onclick="teriyaki_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
@@ -281,7 +281,7 @@
         <img src="img/pratos/Imagens prontas/Tonkatsu Frango.png">
       </a>
       <h5>TONKATSU</h5>
-      <h5>R$10,90</h5>
+      <h5>R$35,50</h5>
       <button onclick="tonkatsu_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
@@ -289,7 +289,7 @@
         <img src="img/pratos/Imagens prontas/Yakitori Frango.png">
       </a>
       <h5>YAKITORI</h5>
-      <h5>R$40,15</h5>
+      <h5>R$30,50</h5>
       <button onclick="yakitori_receipt()"  class="buy display-flex">COMPRAR</button>
     </div>
   </div>
@@ -302,40 +302,40 @@
 
 <div class="exploring">
   <div class="container">
-    <h1>Peixes</h1>
+    <h1 id="PEIXESEC">Peixes</h1>
   </div>
   <div class="cardapio">
     <div class="boxcardapio">
-      <a onclick="karaage_receipt()">
+      <a onclick="sashimi_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/prontosashimi.png">
        </a>
        <h5>SASHIMI</h5>
-       <h5>R$39.50</h5>
-      <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
+       <h5>R$54,90</h5>
+      <button onclick="sashimi_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
-      <a href="#">
+      <a onclick="tempura_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/Tempurá peixe.png">
       </a>
       <h5>TEMPURÁ</h5>
       <h5>R$40,15<span style="font-style:oblique;">(-20%)</span></h5>
-      <button class="buy display-flex">COMPRAR</button>
+      <button onclick="tempura_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
-      <a href="#">
+      <a onclick="urumaki_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/Uramaki sushi peixe.png">
       </a>
       <h5>URUMAKI</h5>
       <h5>R$10,90<span style="font-style:oblique;">(-20%)</span></h5>
-      <button class="buy display-flex">COMPRAR</button>
+      <button onclick="urumaki_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
-      <a href="#">
+      <a onclick="teppanyaki_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/teppanyaki peixe.png">
       </a>
       <h5>TEPPANYAKI</h5>
       <h5>R$40,15</h5>
-      <button class="buy display-flex">COMPRAR</button>
+      <button onclick="teppanyaki_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
   </div>
   </div>
@@ -347,40 +347,40 @@
 
 <div class="exploring">
   <div class="container">
-    <h1>Bebidas</h1>
+    <h1 id="BEBIDASEC">Bebidas</h1>
   </div>
   <div class="cardapio">
     <div class="boxcardapio">
-      <a onclick="karaage_receipt()">
+      <a onclick="fanta_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/Fanta Bebidas.png">
        </a>
        <h5>FANTA</h5>
-       <h5>R$6,00</h5>
-      <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
+       <h5>R$14,50</h5>
+      <button onclick="fanta_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
-      <a href="#">
+      <a onclick="pepsi_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/Pepsi Bebidas.png">
       </a>
       <h5>PEPSI</h5>
-      <h5>R$7,50</h5>
-      <button class="buy display-flex">COMPRAR</button>
+      <h5>R$15,50</h5>
+      <button onclick="pepsi_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
-      <a href="#">
+      <a onclick="coca_cola_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/coca cola bebidas.png">
       </a>
       <h5>COCA COLA</h5>
-      <h5>R$10,90</h5>
-      <button class="buy display-flex">COMPRAR</button>
+      <h5>R$17,50</h5>
+      <button onclick="coca_cola_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
-      <a href="#">
+      <a onclick="ryokucha_receipt()" style="cursor: pointer;">
         <img src="img/pratos/Imagens prontas/Ryokucha Bebidas.png">
       </a>
       <h5>RYOKUCHA</h5>
-      <h5>R$6,50</h5>
-      <button class="buy display-flex">COMPRAR</button>
+      <h5>R$10,50</h5>
+      <button onclick="ryokucha_receipt()" class="buy display-flex">COMPRAR</button>
     </div>
   </div>
   </div>
@@ -424,9 +424,9 @@
        </div>
        <div class="fbx2">
         <h1 class="titlefooter ">Midia</h1>
-        <h4 class="footertext "><img src="img/footer/Twitter-X-Icon-PNG-758x473 1.png" alt=""> @PankoBox</h4>
-        <h4 class="footertext "><img src="img/footer/Linkedin-Logo-Transparent-Image 1 (2).png" alt=""> PankoBox</h4>
-        <h4 class="footertext "><img src="img/footer/R 1 (1).png" alt=""> @PankoBox</h4>
+        <h4 class="footertext "><img class="footer-img" src="img/footer/Twitter-X-Icon-PNG-758x473 1.png" alt=""> @PankoBox</h4>
+        <h4 class="footertext "><img id="linkedin" class="footer-img" src="img/footer/linkedin-with-circle.256x256.png" alt="">PankoBox</h4>
+        <h4 class="footertext "><img class="footer-img" src="img/footer/R 1 (1).png" alt=""> @PankoBox</h4>
        </div>
        <div class="fbx3">
         <h1 class="titlefooter">Contatos </h1>

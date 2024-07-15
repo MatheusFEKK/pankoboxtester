@@ -13,6 +13,7 @@ function karaage_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
+    backgroundpage.style.pointerEvents = "none";
 
 }
 
@@ -25,7 +26,7 @@ function teriyaki_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function tonkatsu_receipt(){
@@ -37,7 +38,7 @@ function tonkatsu_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function yakitori_receipt(){
@@ -49,7 +50,7 @@ function yakitori_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 //Lámen//
@@ -63,7 +64,7 @@ function shoyu_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function yakisoba_receipt(){
@@ -75,7 +76,7 @@ function yakisoba_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function shio_receipt(){
@@ -87,7 +88,7 @@ function shio_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function miso_receipt(){
@@ -99,7 +100,7 @@ function miso_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 //Peixes//
@@ -113,7 +114,7 @@ function sashimi_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function tempura_receipt(){
@@ -125,7 +126,7 @@ function tempura_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function urumaki_receipt(){
@@ -137,7 +138,7 @@ function urumaki_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function teppanyaki_receipt(){
@@ -149,7 +150,7 @@ function teppanyaki_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 //Combos
@@ -158,12 +159,13 @@ function urumakimisopepsi_receipt(){
     let urumakimisopepsi = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Combo Miso + Urumaki + Pepsi</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/Combo_Uramaki_Miso_Pepsi.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Miso 500g</li><li>Pepsi 400ml</li><li>1 Pacote Urumaki Sushi</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
+    
     menu.innerHTML =  urumakimisopepsi;
 
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function tonkatsupepsi_receipt(){
@@ -175,7 +177,7 @@ function tonkatsupepsi_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 //Bebidas
@@ -189,7 +191,7 @@ function fanta_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 
@@ -202,7 +204,7 @@ function pepsi_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
-
+    backgroundpage.style.pointerEvents = "none";
 }
 
 function coca_cola_receipt(){
@@ -214,6 +216,7 @@ function coca_cola_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
+    backgroundpage.style.pointerEvents = "none";
 
 }
 
@@ -226,6 +229,7 @@ function ryokucha_receipt(){
     document.body.appendChild(menu);
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
+    backgroundpage.style.pointerEvents = "none";
 
 }
 
@@ -239,13 +243,13 @@ function receipt_close(){
     let menu = document.querySelector(".receipt-background")
     if (menu){
         menu.remove();
-
     }
 
     document.body.style.overflow = "auto";
     backgroundpage.style.filter = "none";
+    backgroundpage.style.pointerEvents = "all";
 
-
+    
 
 }
 

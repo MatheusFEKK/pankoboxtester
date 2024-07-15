@@ -5,7 +5,7 @@ let backgroundpage = document.getElementById('background_page');
 
 // Receitas de Frango//
 function karaage_receipt(){
-    let karaagereceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Karaage</h2><div class='meal-product-details'><img class='receipt-img' src='../img/receipt/karaage_receita.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>900g de coxas de frango sem pele e com osso, cortadas em pedaços pequenos.</li><li>⅓ Xícara de molho de soja.</li><li>2 colheres de sopa de saquê.</li><li>25g de gengibre fresco ralado</li><li>170g de amido de batata (katakuriko)</li><li>Óleo vegetal para fritar</li><li>½ limão (para servir)</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let karaagereceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Karaage</h2><div class='meal-product-details'><img class='receipt-img' src='receipt/karaage_receita.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>900g de coxas de frango sem pele e com osso, cortadas em pedaços pequenos.</li><li>⅓ Xícara de molho de soja.</li><li>2 colheres de sopa de saquê.</li><li>25g de gengibre fresco ralado</li><li>170g de amido de batata (katakuriko)</li><li>Óleo vegetal para fritar</li><li>½ limão (para servir)</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  karaagereceipt;
@@ -17,7 +17,7 @@ function karaage_receipt(){
 }
 
 function teriyaki_receipt(){
-    let teriyakireceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Teriyaki</h2><div class='meal-product-details'><img class='receipt-img' src='../img/receipt/teriyaki_receipt.jpg'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>4 sobrecoxas desossadas de frango sem pele</li><li>½ xícara (chá) de amido de milho</li><li>Sal e pimenta-do-reino</li><li>Gengibre em conserva (beni shōga) </li><li>Amido de milho</li><li>Molho Teriyaki</li><li>Gengibre em conserva.</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let teriyakireceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Teriyaki</h2><div class='meal-product-details'><img class='receipt-img' src='receipt/teriyaki_receipt.jpg'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>4 sobrecoxas desossadas de frango sem pele</li><li>½ xícara (chá) de amido de milho</li><li>Sal e pimenta-do-reino</li><li>Gengibre em conserva (beni shōga) </li><li>Amido de milho</li><li>Molho Teriyaki</li><li>Gengibre em conserva.</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  teriyakireceipt;

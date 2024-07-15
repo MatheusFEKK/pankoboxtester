@@ -29,7 +29,7 @@ function teriyaki_receipt(){
 }
 
 function tonkatsu_receipt(){
-    let tonkatsureceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Tonkatsu</h2><div class='meal-product-details'><img class='receipt-img' src='/img/receipt/tonkatsu_receipt.jpg'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>4 metades de peito de frango desossado e sem pele (cada uma com 170 gramas)</li><li>3/4 colher de chá de sa</li><li>1/2 colher de chá de pimenta</li><li>2 ovos grandes, levemente batidos</li><li>3/4 xícara de farinha de trigo comum</li><li>1 xícara de panko (farinha de rosca japonesa</li><li>Óleo</li><li>Molho Tonkatsu</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let tonkatsureceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Tonkatsu</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/tonkatsu_receipt.jpg'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>4 metades de peito de frango desossado e sem pele (cada uma com 170 gramas)</li><li>3/4 colher de chá de sa</li><li>1/2 colher de chá de pimenta</li><li>2 ovos grandes, levemente batidos</li><li>3/4 xícara de farinha de trigo comum</li><li>1 xícara de panko (farinha de rosca japonesa</li><li>Óleo</li><li>Molho Tonkatsu</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  tonkatsureceipt;
@@ -155,7 +155,7 @@ function teppanyaki_receipt(){
 //Combos
 
 function urumakimisopepsi_receipt(){
-    let urumakimisopepsi = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Combo Miso + Urumaki + Pepsi</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/Combo_Uramaki_Miso_Pepsi.PNG'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Miso 500g</li><li>Pepsi 400ml</li><li>1 Pacote Urumaki Sushi</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let urumakimisopepsi = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Combo Miso + Urumaki + Pepsi</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/Combo_Uramaki_Miso_Pepsi.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Miso 500g</li><li>Pepsi 400ml</li><li>1 Pacote Urumaki Sushi</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  urumakimisopepsi;
@@ -167,7 +167,7 @@ function urumakimisopepsi_receipt(){
 }
 
 function tonkatsupepsi_receipt(){
-    let tonkatsupepsi = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Combo Tonkatsu + Pepsi</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/Combo_Tonkatsu_Pepsi.PNG'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Tonkatsu 400g</li><li>Pepsi 400ml</li><li>Salada de repolho.</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let tonkatsupepsi = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Combo Tonkatsu + Pepsi</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/Combo_Tonkatsu_Pepsi.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Tonkatsu 400g</li><li>Pepsi 400ml</li><li>Salada de repolho.</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  tonkatsupepsi;
@@ -181,7 +181,7 @@ function tonkatsupepsi_receipt(){
 //Bebidas
 
 function fanta_receipt(){
-    let fanta = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Fanta</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/fanta_receipt.PNG'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Fanta Uva</li><li>Fanta Guaraná</li><li>Fanta Laranja</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let fanta = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Fanta</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/fanta_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Fanta Uva</li><li>Fanta Guaraná</li><li>Fanta Laranja</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  fanta;
@@ -194,7 +194,7 @@ function fanta_receipt(){
 
 
 function pepsi_receipt(){
-    let fanta = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Pepsi</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/pepsi_receipt.PNG'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Pepsi 400ml 3 Unidades</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let fanta = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Pepsi</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/pepsi_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Pepsi 400ml 3 Unidades</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  fanta;
@@ -206,7 +206,7 @@ function pepsi_receipt(){
 }
 
 function coca_cola_receipt(){
-    let coca_cola = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Coca Cola</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/coca_cola_receipt.PNG'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Coca Cola 350ml 3 Unidades</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let coca_cola = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Coca Cola</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/coca_cola_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Coca Cola 350ml 3 Unidades</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  coca_cola;
@@ -218,7 +218,7 @@ function coca_cola_receipt(){
 }
 
 function ryokucha_receipt(){
-    let ryokucha = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>ryokucha</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/ryokucha_receipt.PNG'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Ryokucha 600ml 1 unidade</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let ryokucha = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>ryokucha</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/ryokucha_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Ryokucha 600ml 1 unidade</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  ryokucha;

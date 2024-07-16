@@ -22,13 +22,13 @@
     right: 12%;
     span {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 
 .nav-link {
-    padding: 3rem;
+    padding: 1.5rem;
     color: white;
     text-decoration: none;
 }
@@ -42,6 +42,7 @@
 }
 
 .user-a {
+    margin-left:4rem ;
     left: 30%;
     gap: 2rem;
 
@@ -50,8 +51,8 @@
         color: white;
     }
 }
-/* #NAVBAR END */
 
+/* #NAVBAR END */
 /* MENU START*/
 
 .container {

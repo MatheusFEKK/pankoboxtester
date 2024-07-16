@@ -253,10 +253,17 @@ function receipt_close(){
 
 }
 
-function dropdownmenu(){
-    let divmenu = document.getElementById('menudrop');
-    let menuopening = "<div class='menu'> <ul>"
-    let menuclosing = "</ul> </div>"
 
-    divmenu.innerHTML = (menuopening + menuclosing);
+function scrollup () {
+    let btn = document.getElementById('btn-scoll');
+        if(document.body.scrollTop > 250) {
+            btn.style.display = "block"
+        } else {
+            btn.style.display = "none"
+        }
+
+    
 }
+
+scrollup();
+

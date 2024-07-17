@@ -1,4 +1,5 @@
 //Variaveis declaradas para o sistema de receitas.//
+document.addEventListener("scroll" , scrollup);
 
 let body = document.body;
 let backgroundpage = document.getElementById('background_page');
@@ -254,16 +255,12 @@ function receipt_close(){
 }
 
 
-function scrollup () {
-    let btn = document.getElementById('btn-scoll');
-        if(document.body.scrollTop > 250) {
-            btn.style.display = "block"
-        } else {
-            btn.style.display = "none"
-        }
-
-    
+function scrollup() {
+    let btn = document.getElementById('btn-scroll');
+    if (window.scrollY > 250) {
+        btn.style.scale = 1.5;
+    } else {
+        btn.style.scale = 0;
+    }
 }
-
-scrollup();
 

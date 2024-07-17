@@ -36,6 +36,7 @@
     gap: 2rem;
     .nav-icons {
         display: inline-flex;
+
     }
 
 }
@@ -111,7 +112,15 @@
 /* MENU END */
 
 #btn-scroll {
-
+    position: fixed;
+    border: none;
+    border-radius: 5rem;
+    background-color: red;
+    float: right;
+    bottom: 1rem;
+    right: 5rem;
+    transition: 0.3s ease-in;
+    scale: 0;
 }
 
 .boxcardapio {

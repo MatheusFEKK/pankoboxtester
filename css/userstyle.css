@@ -275,17 +275,14 @@
         flex-direction: column;
         a {
             text-decoration: none;
-            padding: 1rem;
+            padding: 0.5rem;
         }
         img{
             width: 3rem;
     
         }
     
-        #cartuser{
-            margin-left: -0.5rem;
-    
-        }
+
  }
 
 

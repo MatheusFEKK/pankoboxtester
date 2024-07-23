@@ -10,10 +10,14 @@
 </head>
 <body>
   <!-- COMEÇO DA NAVBAR -->
+   <main id="background_page">
+    
   <div class="chest">
     <nav class="navbar">
         <div class="brand-logo">
+          <a href="index.html">
             <span><img src="img/logo/Vector (1).png" alt=""></span>
+          </a>
         </div>
         <div class="chest-itens">
             <ul class="nav-itens">
@@ -82,46 +86,49 @@
 
 <div class="exploring">
   <div class="caixona">
-    <h1>Para você!</h1>
+    <div class="container">
+      <h1>Para você!</h1>
+
+    </div>
   </div>
   <div class="cardapio">
     <div class="boxcardapio">
-      <a onclick="karaage_receipt()">
-        <img src="img/pratos/Imagens prontas/prontosashimi.png">
+      <a onclick="karaage_receipt()" style="cursor: pointer;">
+        <img src="img/pratos/Imagens prontas/karaage Frango.png">
        </a>
-       <h5>SASHIMI </h5>
-       <h5>PREÇO: <br> R$54.90</h5>
+       <h5>KARAAGE</h5>
+       <h5>R$34,50</h5>
       <button onclick="karaage_receipt()" id="karaagebuy" class="buy display-flex">COMPRAR</button>
     </div>
     <div class="boxcardapio">
-      <a href="#">
-        <img src="img/pratos/Imagens prontas/prontoyakisoba.png">
-      </a>
-      <h5>YAKISOBA</h5>
-      <h5>PREÇO: <br> R$30.90</h5>
-      <button class="buy display-flex">COMPRAR</button>
-    </div>
-    <div class="boxcardapio">
-      <a href="#">
-        <img src="img/pratos/Imagens prontas/prontosashimi.png">
-      </a>
-      <h5>KARAAGE</h5>
-      <h5>PREÇO: <br> R$54.90</h5>
-      <button class="buy">COMPRAR</button>
-    </div>
-    <div class="boxcardapio">
-      <a href="#">
-        <img src="img/pratos/Imagens prontas/prontosashimi.png">
-      </a>
-      <h5>SASHIMI</h5>
-      <h5>PREÇO: <br> R$54.90</h5>
-      <button class="buy display-flex">COMPRAR</button>
-    </div>
+     <a onclick="shio_receipt()" style="cursor: pointer;">
+       <img src="img/pratos/Imagens prontas/lamen shio.png">
+     </a>
+     <h5>SHIO</h5>
+     <h5>R$55,90</h5>
+     <button onclick="shio_receipt()" class="buy display-flex">COMPRAR</button>
+   </div>
+   <div class="boxcardapio">
+     <a onclick="yakisoba_receipt()" style="cursor: pointer;">
+       <img src="img/pratos/Imagens prontas/prontoyakisoba.png">
+     </a>
+     <h5>YAKISOBA</h5>
+     <h5>R$30,90</h5>
+     <button onclick="yakisoba_receipt()" class="buy display-flex">COMPRAR</button>
+   </div>
+   <div class="boxcardapio">
+     <a onclick="tempura_receipt()" style="cursor: pointer;">
+       <img src="img/pratos/Imagens prontas/Tempurá peixe.png">
+     </a>
+     <h5>TEMPURÁ</h5>
+     <h5>R$40,15<span style="font-style:oblique;">(-20%)</span></h5>
+     <button onclick="tempura_receipt()" class="buy display-flex">COMPRAR</button>
+   </div>
   </div>
-  </div>
 </div>
 </div>
 </div>
+</main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="script/cart.js"></script>

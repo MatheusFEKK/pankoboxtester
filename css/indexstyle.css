@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
 
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { }
+
+
+
+
+
+
 * {
     font-family: "Inter", sans-serif;
     font-weight: bold;
@@ -123,6 +136,7 @@
     scale: 0;
 }
 
+
 .boxcardapio {
     border-radius: 2rem;
     width: 12rem;
@@ -144,6 +158,12 @@
     h5 {
         font-weight: bold;
         text-align: center;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 480px) { 
+    .cardapio {
+        gap: 1rem;
     }
 }
 
@@ -601,7 +621,7 @@
     flex-direction: row;
     background: rgb(240,33,33);
     background: linear-gradient(90deg, rgba(240,33,33,1) 40%, rgba(73,42,164,1) 100%);
-    padding-bottom: 50px;
+    padding-bottom: 15px;
 }
 
 .footer-img{
@@ -611,18 +631,17 @@
     margin-right: 1rem; ;
 }
 .fbx1{
-    padding-top: 6rem;
-    padding-bottom: 5rem;
-    padding-left: 3rem;
-    text-align: start;
-    flex: 50%;
+    text-align: center;
+    padding-top: 5rem;
+    flex: 40%;
+    margin-right: 2rem;
 
         #footerlogo{
             width: 35rem;
         }
 }
 .fbx2{
-    padding-top: 3rem;
+    padding-top: 2rem;
     flex:25%;
     text-align: start;
     justify-content: start;
@@ -632,7 +651,7 @@
     }
 }
 .fbx3{
-    padding-top: 3rem;
+    padding-top: 2rem;
     flex:25%;
     h1{
         border-bottom: solid #FFECE5 5px;width: 11rem;margin-bottom: 2rem;

@@ -3,6 +3,7 @@ document.addEventListener("scroll" , scrollup);
 
 let body = document.body;
 let backgroundpage = document.getElementById('background_page');
+let fechar = document.querySelector("<li>")
 
 // Receitas de Frango//
 function karaage_receipt(){
@@ -15,6 +16,11 @@ function karaage_receipt(){
     document.body.style.overflow = "hidden";
     backgroundpage.style.filter = "blur(10px)";
     backgroundpage.style.pointerEvents = "none";
+
+
+    if(window.screen.width >= 1024 && window.screen.width <= 1280){
+        fechar.remove();
+    }
 
 }
 
@@ -81,7 +87,7 @@ function yakisoba_receipt(){
 }
 
 function shio_receipt(){
-    let shioreceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Shio</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/shio_receipt.jpg'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Caldo:1 litro de água / 2 pedaços de alga kombu / 2 cogumelos shitake secos / 6 peixes secos / 1 kg de carcaça de frango / 4 sobrecoxas com coxas desossadas / Sal e pimenta-do-reino</li><li>Tempeiro: ½ xícara de chá de shoyu , ⅓ xícara de chá de saquê mirim, ½ xícara de chá de água / 4 rodelas de gengibre / 4 dentes de alho partidos ao meio / Talos de cebolinha / ½ xícara de chá do caldo / 2 colheres de sopa rasas de sal / 2 colheres de sopa de molho de peixe concentrado / 1 pacotinho de katsuoboshi / 1 colher de sopa de shoyu </li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let shioreceipt = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Shio</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/shio_receipt.jpg'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Caldo:1 litro de água / 2 pedaços de alga kombu / 2 cogumelos shitake secos / 6 peixes secos / 1 kg de carcaça de frango / 4 sobrecoxas com coxas desossadas / Sal e pimenta-do-reino</li><li>Tempeiro: ½ xícara de chá de shoyu ,/ 1 colher de sopa de shoyu </li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  shioreceipt;
@@ -184,7 +190,7 @@ function tonkatsupepsi_receipt(){
 //Bebidas
 
 function fanta_receipt(){
-    let fanta = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Fanta</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/fanta_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Fanta Uva</li><li>Fanta Guaraná</li><li>Fanta Laranja</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let fanta = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Fanta 1 de cada sabor!</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/fanta_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Fanta Uva</li><li>Fanta Guaraná</li><li>Fanta Laranja</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  fanta;
@@ -197,7 +203,7 @@ function fanta_receipt(){
 
 
 function pepsi_receipt(){
-    let fanta = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Pepsi</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/pepsi_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Pepsi 400ml 3 Unidades</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let fanta = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Pepsi</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/pepsi_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Pepsi 400ml 1 Unidade</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  fanta;
@@ -209,7 +215,7 @@ function pepsi_receipt(){
 }
 
 function coca_cola_receipt(){
-    let coca_cola = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Coca Cola</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/coca_cola_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Coca Cola 350ml 3 Unidades</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
+    let coca_cola = "<div class='receipt-background'><button class='button-close' onclick='receipt_close()'>X</button><h2>Coca Cola</h2><div class='meal-product-details'><img class='receipt-img' src='img/receipt/coca_cola_receipt.png'><div class='receipt-description'><aside><h3 style='font-weight:900;'>Conteúdo</h3><h4><ul class='receipt-ingredient'><li>Coca Cola 350ml 1 Unidades</li></ul></h4></aside><div id='button'></div></div></div><div class='receipt-buy-button'><a class='receipt-buy inert' href='login.html'>Peça já</a></div></div>";
 
     let menu = document.createElement("div");
     menu.innerHTML =  coca_cola;

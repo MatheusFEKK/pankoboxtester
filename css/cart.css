@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
 
+:root {
+    --navbar-color: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
+    --navbar-color-2: #FFFFFF;
+    --footer-color: linear-gradient(90deg, rgba(240,33,33,1) 40%, rgba(73,42,164,1) 100%);
+    --input-color: #d4d4d4;
+    --button-color-1: #000000;
+    --button-color-2: #ff0000;
+    --button-color-3: #FFA24B;
+    --box-color: #FDFDFD;
+    --footer-text-color: #FFECE5;
+    --button-text: #FFFFFF;
+    --font-inter: "Inter", sans-serif;
+    --font-bold: bold;
+    --font-kadwa: font-family: "Kadwa", serif;
+    --font-weight-kadwa: font-weight: 800;
+    --order-itensbackground:#F6F6F6;
+}
+
 * {
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    max-width: 100%;
+    font-family: var(--font-inter);
+    font-weight: var(--font-bold);
 }
 
 /* # NAVBAR */
@@ -12,44 +29,35 @@
 .navbar {
     display: flex;
     justify-content: center;
-    background: rgb(240,33,33);
-    background: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
+    background: var(--navbar-color);
 
 
 }
 .brand-logo {
     position: relative;
     right: 12%;
-    span {
-        font-weight: bold;
-        font-size: 20px;
-    }
 }
 
 
 .nav-link {
     padding: 1.5rem;
-    color: white;
+    color: var(--navbar-color-2);
     text-decoration: none;
 }
 
 .chest-itens {
     gap: 2rem;
+
     .nav-icons {
         display: inline-flex;
     }
-
 }
 
 .user-a {
-    margin-left: 4rem;
+    margin-left:4rem ;
     gap: 2rem;
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
 }
+
 /* #NAVBAR END */
 
 .bigbox {
@@ -66,7 +74,7 @@
 .container2 {
     display: flex;
     justify-content: center;
-    background-color: #F6F6F6;
+    background-color: var(--order-itensbackground);
     width: 60rem;
     height: 43rem;
     margin-top: 2rem;
@@ -77,7 +85,7 @@
 .box {
     display: flex;
     align-items: center;
-    background-color: #D7D7D7;
+    background-color: var(--box-color);
     width: 50rem;
     height: 5rem;
     border-radius: 4rem;
@@ -87,7 +95,7 @@
     
     p {
         display: inline;
-        font-family: "Inter", sans-serif;
+        font-family: var(--font-inter);
         font-weight: 600;
         font-style: Italic;
         margin: 0%;
@@ -110,7 +118,7 @@
     display: flex;
     box-shadow: 0px 2px 4px 0px ;
     border-radius: 3.8vh;
-    background-color: #F8F8F8;
+    background-color: var(--box-color);
     width: 40rem;
     gap: 3rem;
     flex-wrap: wrap;
@@ -142,8 +150,10 @@
 @media all and (max-width: 480px) {
     
     .categorias {
+
         gap: 5rem;
         padding-right: 2rem;
+
         .kadwa-bold {
             text-align: center;
             font-size: 8pt;
@@ -186,13 +196,13 @@
     }
 
     .finish-buy {
-        background-color: #C32F2F;
+        background-color: var(--button-color-2);
         border: none;
         width: 22rem;
         height: 2.5rem;
         margin-top: 1rem;
         border-radius: 2rem;
-        font-family: "Inter";
+        font-family: var(--font-inter);
 
     }
 
@@ -204,7 +214,7 @@
         height: 2.5rem;
         margin-top: 1rem;
         border-radius: 2rem;
-        font-family: "Inter";
+        font-family: var(--font-inter);
     }
 }
 
@@ -213,7 +223,7 @@
         margin-top: 1rem;
         margin-right: 5rem;
         float: left;
-        font-family: "Inter";
+        font-family: var(--font-inter);
         font-weight: 600;
         font-style: italic;
         margin-bottom: 2rem;
@@ -221,21 +231,11 @@
     .item-value{
         margin-top: 1rem;
         float: right;
-        font-family: "Inter";
+        font-family: var(--font-inter);
         font-weight: 600;
     }
     
 }
-
-
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-
- }
-
-@media all and (min-width: 768px) and (max-width: 1024px) { 
-
-}
-
 
 /* CARDS */
 .boxcardapio {
@@ -249,7 +249,6 @@
     }
 }
 
-
 .cardapio {
     display: flex;
     justify-content: center;
@@ -257,21 +256,20 @@
     gap: 5rem;
     flex-wrap: wrap;
     h5 {
-        font-weight: bold;
+        font-weight: var(--font-bold);
         text-align: center;
     }
 }
 
 .exploring {
     h1 {
-    font-weight: bolder;
+    font-weight: var(--font-bold);
     font-size: 30px;
     padding-top: 4rem;
     padding-left: 2rem;
     flex-wrap: wrap;
 }
 
-    padding-bottom: 5rem;
 }
 .bxcate {
 
@@ -282,7 +280,7 @@
 }
 
 .buy {
-    background-color: #FFA24B;
+    background-color: var(--button-color-3);
     border: none;
     border-radius: 1rem;
     padding: 0.5rem;
@@ -303,21 +301,19 @@
     transform: translate(-50%, -50%);
     width: 80rem;
     padding: 2rem;
-    background-color: #FEFEFE;
+    background-color: var(--box-color);
     border-radius: 3rem;
     box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
     animation: receipt_opening 1s ;
     
     h2{
         margin-bottom: 1.5rem;
-            font-family: "Kadwa", sans-serif;
+            font-family: var(--font-kadwa);
             text-align: center;
             font-weight: 700;
-            
         }
-
-        
     }
+
     .button-close{
         font-weight: 700;
         width: 2rem;
@@ -328,13 +324,12 @@
         transition: all 0.3s;
     }
     .button-close:hover {
-        background-color: crimson;
+        background-color: var(--button-color-2);
     }
 
     .meal-product-details{
         display: flex;
         flex-direction: row;
-    
     }
     
     .receipt-ingredient{
@@ -346,10 +341,10 @@
 
     }
     
-    
     .receipt-img{
         border-radius: 30px;
-        width:37.5rem ; height:37.5rem ;
+        width:37.5rem; 
+        height:37.5rem;
             
     }
     
@@ -358,31 +353,24 @@
     
             h3{
                 text-align: center;
-                
             }
-            
     }
     
     .receipt-buy-button{
-    
         float: right;
-    
     }
     
     .receipt-buy{
         padding: 0.8rem;
         width: 5em;
-        background-color: #FFA24B;
         border: none;
         border-radius: 1rem;
         text-decoration: none;
-        color: black;
+        color: var(--button-color-1);
     }
     
     .receipt-buy:hover{
-        cursor:pointer;
-    
-    
+        cursor: pointer;
     }
 
     @keyframes receipt_opening{
@@ -393,20 +381,102 @@
 
 
     @media all and (min-width: 1024px) and (max-width: 1280px) {
+        .receipt-background{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70vw;
+            padding: 2rem;
+            background-color: var(--button-text);
+            border-radius: 3rem;
+            box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
+            overflow: auto;
+            animation: receipt_opening 1s ;
+            
+            h2{
+                margin-bottom: 0.5rem;
+                    font-size: 1.5rem ;
+                    font-family: var(--font-kadwa);
+                    text-align: center;
+                    font-weight: 700;
+                }
+                
+                h4{
+                    font-size: 0.85rem;
+                }
+            }
 
+            .button-close{
+                font-weight: 700;
+                width: 3rem;
+                height: 3rem;
+                float: right;
+                border: none;
+                border-radius: 0.5rem;
+                transition: all 0.3s;
+            }
+            .button-close:hover {
+                background-color: var(--button-color-2);
+            }
+        
+            .meal-product-details{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .receipt-ingredient{
+                list-style-type: decimal;
+        
+            }
 
-
-    }
-    @media all and (min-width: 768px) and (max-width: 1024px) {
+            .receipt-ingredient li{
+                padding: 3px;
+        
+            }
+            
+            .receipt-img{
+                border-radius: 20px;
+                width:15rem; 
+                height: 15rem;
+                    
+            }
+            
+            .receipt-description{
+                padding: 20px;
+            
+                    h3{
+                        font-size: 0.9rem;
+                        text-align: center;
+                    }
+                    
+            }
+            
+            .receipt-buy-button{
+                float: right;
+            }
+            
+            .receipt-buy{
+                padding: 0.2rem;
+                width: 2rem;
+                border: none;
+                border-radius: 1rem;
+                text-decoration: none;
+                color: var(--button-color-1);
+            }
+        }     
+    
+    @media all and (min-width: 768px) and (max-width: 1023px) {
 
         .receipt-background{
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 40rem;
+            width: 80vw;
             padding: 2rem;
-            background-color: #FEFEFE;
+            background-color: var(--box-color);
             border-radius: 3rem;
             box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
             overflow:hidden;
@@ -414,33 +484,33 @@
             
             h2{
                 margin-bottom: 0.5rem;
-                    font-family: "Kadwa", sans-serif;
+                    font-family: var(--font-kadwa);
                     text-align: center;
                     font-weight: 700;
                     
                 }
                 
                 h4{
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                 }
             }
             .button-close{
                 font-weight: 700;
-                width: 2rem;
-                height: 2rem;
+                width: 3rem;
+                height: 3rem;
                 float: right;
                 border: none;
                 border-radius: 0.5rem;
                 transition: all 0.3s;
             }
             .button-close:hover {
-                background-color: crimson;
+                background-color: var(--button-color-2);
             }
         
             .meal-product-details{
                 display: flex;
-                flex-direction: row;
-            
+                align-items: center;
+                flex-direction: column;
             }
             
             .receipt-ingredient{
@@ -455,7 +525,8 @@
             
             .receipt-img{
                 border-radius: 30px;
-                width:10rem ; height: 10rem;
+                width:30rem; 
+                height: 30rem;
                     
             }
             
@@ -464,32 +535,25 @@
             
                     h3{
                         text-align: center;
-                        
-                        
-                    }
-                    
+                    }  
             }
             
             .receipt-buy-button{
-            
                 float: right;
-            
             }
             
             .receipt-buy{
                 padding: 0.8rem;
                 width: 5em;
-                background-color: #FFA24B;
+                background-color: var(--button-color-3);
                 border: none;
                 border-radius: 1rem;
                 text-decoration: none;
-                color: black;
-            }
-            
+                color: var(--button-color-1);
+            }     
+
             .receipt-buy:hover{
                 cursor:pointer;
-            
-            
             }
         
             @keyframes receipt_opening{
@@ -507,9 +571,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 40rem;
+            width: 80vw;
             padding: 2rem;
-            background-color: #FEFEFE;
+            background-color: var(--box-color);
             border-radius: 3rem;
             box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
             overflow:hidden;
@@ -517,7 +581,7 @@
             
             h2{
                 margin-bottom: 0.5rem;
-                    font-family: "Kadwa", sans-serif;
+                    font-family: var(--font-kadwa);
                     text-align: center;
                     font-weight: 700;
                     
@@ -527,6 +591,7 @@
                     font-size: 1rem;
                 }
             }
+
             .button-close{
                 font-weight: 700;
                 width: 2rem;
@@ -536,14 +601,15 @@
                 border-radius: 0.5rem;
                 transition: all 0.3s;
             }
+
             .button-close:hover {
-                background-color: crimson;
+                background-color: var(--button-color-2);
             }
         
             .meal-product-details{
                 display: flex;
-                flex-direction: row;
-            
+                align-items: center;
+                flex-direction: column;
             }
             
             .receipt-ingredient{
@@ -552,9 +618,7 @@
             }
             .receipt-ingredient li{
                 padding: 5px;
-        
             }
-            
             
             .receipt-img{
                 border-radius: 30px;
@@ -567,26 +631,20 @@
             
                     h3{
                         text-align: center;
-                        
-                        
-                    }
-                    
+                    }     
             }
             
             .receipt-buy-button{
-            
                 float: right;
-            
             }
             
             .receipt-buy{
                 padding: 0.8rem;
                 width: 5em;
-                background-color: #FFA24B;
                 border: none;
                 border-radius: 1rem;
                 text-decoration: none;
-                color: black;
+                color: var(--button-color-1);
             }
             
             .receipt-buy:hover{
@@ -611,7 +669,6 @@
             transform: translate(-50%, -50%);
             width: 25rem;
             padding: 2rem;
-            background-color: #FEFEFE;
             border-radius: 3rem;
             box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
             animation: receipt_opening 1s ;
@@ -643,7 +700,8 @@
         
             .meal-product-details{
                 display: flex;
-                flex-direction: row;
+                align-items: center;
+                flex-direction: column;
             
             }
             
@@ -659,7 +717,8 @@
             
             .receipt-img{
                 border-radius: 30px;
-                width:7.5rem ; height: 7.5rem;
+                width:10rem; 
+                height: 10rem;
                     
             }
             
@@ -668,32 +727,25 @@
             
                     h3{
                         text-align: center;
-                        
-                        
                     }
                     
             }
             
             .receipt-buy-button{
-            
                 float: right;
-            
             }
             
             .receipt-buy{
                 padding: 0.8rem;
                 width: 5em;
-                background-color: #FFA24B;
                 border: none;
                 border-radius: 1rem;
                 text-decoration: none;
-                color: black;
+                color: var(--button-color-1);
             }
             
             .receipt-buy:hover{
                 cursor:pointer;
-            
-            
             }
         
             @keyframes receipt_opening{

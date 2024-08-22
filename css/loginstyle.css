@@ -1,12 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
 
 body {
     background-color: rgb(247, 247, 247);
 }
 
+:root {
+    --navbar-color: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
+    --navbar-color-2: #FFFFFF;
+    --footer-color: linear-gradient(90deg, rgba(240,33,33,1) 40%, rgba(73,42,164,1) 100%);
+    --input-color: #d4d4d4;
+    --button-color-1: #000000;
+    --button-color-2: #ff0000;
+    --box-color: #FDFDFD;
+    --footer-text-color: #FFECE5;
+    --button-text: #FFFFFF;
+    --font-inter: "Inter", sans-serif;
+    --font-bold: bold;
+    --font-kadwa: font-family: "Kadwa", serif;
+    --font-weight-kadwa: font-weight: 800;
+}
+
+
 * {
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
+    font-family: var(--font-inter);
+    font-weight: var(--font-bold);
 }
 
 /* # NAVBAR */
@@ -14,53 +32,40 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    background: rgb(240,33,33);
-    background: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
+    background: var(--navbar-color);
 
 
 }
 .brand-logo {
     position: relative;
     right: 12%;
-    span {
-        font-weight: bold;
-        font-size: 1.25rem;
-    }
 }
 
 
 .nav-link {
     padding: 1.5rem;
-    color: white;
+    color: var(--navbar-color-2);
     text-decoration: none;
 }
 
 .chest-itens {
     gap: 2rem;
+
     .nav-icons {
         display: inline-flex;
-
     }
-
 }
 
 .user-a {
     margin-left:4rem ;
     gap: 2rem;
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
 }
 
 /* #NAVBAR END */
 
 .container {
     display: flex;
-    justify-content: center; 
     padding: 10rem;
-    
 }
 
 
@@ -71,33 +76,31 @@ body {
     align-items: center;
     width: 70vw;
     height: 50vh;
-    background-color: #FDFDFD;
+    background-color: var(--box-color);
     box-shadow: 0px 2px 2px 0px;
     border-radius: 2rem;
 }
 
 .input-user {
-    border-radius: 2rem;
     border: none;
+    border-radius: 2rem;
     width: 35vw;
-    background-color: #d4d4d4;
     padding: 1rem;
     margin: 0.5rem;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
+    background-color: var(--input-color);
 
 }
 .btn {
-    background-color:black;
-    color: white;
+    background-color: var(--button-color-1);
+    color: var(--button-text);
     border-radius: 2rem;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
+    font-family: var(--font-inter);
+    font-weight: var(--font-bold);
 }
 
 .sign-user {
-    background-color: red;
-    color: black;
+    background-color: var(--button-color-2);
+    color: var(--button-color);
 }
 
 
@@ -118,13 +121,11 @@ body {
 /* FOOTER */
  
 #footer{
-    margin-top: 100px;
     display: flex;
-    width: 100%;
-    padding: 0px;
     flex-direction: row;
-    background: rgb(240,33,33);
-    background: linear-gradient(90deg, rgba(240,33,33,1) 40%, rgba(73,42,164,1) 100%);
+    margin-top: 100px;
+    width: 100%;
+    background: var(--footer-color);
     padding-bottom: 15px;
 }
 
@@ -151,43 +152,30 @@ body {
     justify-content: start;
 
     h1{
-        border-bottom: solid #FFECE5 5px;width: 11rem;margin-bottom: 2rem;
+        border-bottom: solid var(--footer-text-color) 5px;width: 11rem;margin-bottom: 2rem;
     }
 }
 .fbx3{
     padding-top: 2rem;
     flex:25%;
     h1{
-        border-bottom: solid #FFECE5 5px;width: 11rem;margin-bottom: 2rem;
+        border-bottom: solid var(--footer-text-color) 5px;width: 11rem;margin-bottom: 2rem;
     }
 
     
 }
 
 .footertext{
-    color: #FFECE5;
+    color: var(--footer-text-color);
     font-size: 1.2em;
-    font-family: "Kadwa", serif;
-    font-weight: 800;
+    font-family: var(--font-kadwa);    
+    font-weight: var(--font-weight-kadwa);
 }
 .titlefooter{
     font-size: 3rem;
-    color: #FFECE5;
-    font-family: "Kadwa", serif;
-    font-weight: 800;
-
-
-}
-.kadwa-bold {
-    font-family: "Kadwa", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-    
-    
+    color: var(--footer-text-color);
+    font-family: var(--font-kadwa);
+    font-weight: var(--font-weight-kadwa);
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -225,7 +213,7 @@ body {
 
             h1{
                 width: auto;
-                border-top: solid #FFECE5 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+                border-top: solid var(--footer-text-color) 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
                 border-bottom: none;
             }
     }
@@ -236,7 +224,7 @@ body {
         padding-top: 3rem;
 
          h1{
-            border-top: solid #FFECE5 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+            border-top: solid var(--footer-text-color) 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
             border-bottom: none;
             width: auto;
          }
@@ -277,7 +265,7 @@ body {
 
             h1{
                 width: auto;
-                border-top: solid #FFECE5 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+                border-top: solid var(--footer-text-color) 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
                 border-bottom: none;
             }
     }
@@ -288,7 +276,7 @@ body {
         padding-top: 3rem;
 
          h1{
-            border-top: solid #FFECE5 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+            border-top: solid var(--footer-text-color) 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
             border-bottom: none;
             width: auto;
          }
@@ -330,7 +318,7 @@ body {
 
             h1{
                 width: auto;
-                border-top: solid #FFECE5 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+                border-top: solid var(--footer-text-color) 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
                 border-bottom: none;
             }
     }
@@ -341,7 +329,7 @@ body {
         padding-top: 3rem;
 
          h1{
-            border-top: solid #FFECE5 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+            border-top: solid var(--footer-text-color) 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
             border-bottom: none;
             width: auto;
          }

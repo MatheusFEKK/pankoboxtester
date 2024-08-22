@@ -6,14 +6,30 @@
     font-weight: bold;
 }
 
+:root {
+    --navbar-color: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
+    --navbar-color-2: #FFFFFF;
+    --footer-color: linear-gradient(90deg, rgba(240,33,33,1) 40%, rgba(73,42,164,1) 100%);
+    --input-color: #d4d4d4;
+    --button-color-1: #000000;
+    --button-color-2: #ff0000;
+    --box-color: #FDFDFD;
+    --footer-text-color: #FFECE5;
+    --button-text: #FFFFFF;
+    --font-inter: "Inter", sans-serif;
+    --font-bold: bold;
+    --font-kadwa: font-family: "Kadwa", serif;
+    --font-weight-kadwa: font-weight: 800;
+    --order-itensbackground:#F6F6F6;
+}
 
 /* # NAVBAR */
 
 .navbar {
+
     display: flex;
     justify-content: center;
-    background: rgb(240,33,33);
-    background: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
+    background: var(--navbar-color);
 
 
 }
@@ -29,7 +45,7 @@
 
 .nav-link {
     padding: 1.5rem;
-    color: white;
+    color: var(--box-color);
     text-decoration: none;
 }
 
@@ -48,7 +64,7 @@
 
     a {
         text-decoration: none;
-        color: white;
+        color: var(--box-color);
     }
 }
 
@@ -60,7 +76,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: #F6F6F6;
+    background-color: var(--order-itensbackground);
     padding-bottom: 20rem;
     border-radius: 2rem;
     box-shadow: 0px 4px 4px 0px;
@@ -72,7 +88,6 @@
 
 
     span{
-        color: #341D16;
         font-size: 2rem;
     }
 
@@ -82,7 +97,7 @@
         font-family:"Kadwa", serif ;
         font-weight: 600;
         font-size: 3rem;
-        color: #341D16;
+
 
      }
 }
@@ -125,7 +140,7 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        background-color: #F6F6F6;
+        background-color: var(--order-itensbackground);
         width: 36rem;
         padding-top: 5rem;
         padding-bottom: 13rem;
@@ -139,7 +154,6 @@
     
     
         span{
-            color: #341D16;
             font-size: 1.5rem;
         }
     
@@ -149,7 +163,6 @@
             font-family:"Kadwa", serif ;
             font-weight: 600;
             font-size: 3rem;
-            color: #341D16;
     
          }
     }
@@ -180,7 +193,7 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        background-color: #F6F6F6;
+        background-color: var(--order-itensbackground);
         width: 25rem;
         padding-top: 2rem;
         padding-bottom: 6rem;
@@ -194,7 +207,6 @@
     
     
         span{
-            color: #341D16;
             font-size: 1rem;
         }
     
@@ -204,7 +216,6 @@
             font-family:"Kadwa", serif ;
             font-weight: 600;
             font-size: 2rem;
-            color: #341D16;
     
          }
     }
@@ -242,7 +253,7 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        background-color: #F6F6F6;
+        background-color: var(--order-itensbackground);
         width: 20rem;
         padding-bottom: 5rem;
         border-radius: 2rem;
@@ -255,7 +266,6 @@
     
     
         span{
-            color: #341D16;
             font-size: 0.8rem;
         }
     
@@ -265,7 +275,6 @@
             font-family:"Kadwa", serif ;
             font-weight: 600;
             font-size: 2rem;
-            color: #341D16;
     
          }
     }

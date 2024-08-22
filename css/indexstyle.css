@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
 
-@media all and (min-width: 1024px) and (max-width: 1280px) { }
-
-@media all and (min-width: 768px) and (max-width: 1024px) { }
-
-@media all and (min-width: 480px) and (max-width: 768px) { }
-
-@media all and (max-width: 480px) { }
-
-
-
-
+:root {
+    --navbar-color: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
+    --navbar-color-2: #FFFFFF;
+    --footer-color: linear-gradient(90deg, rgba(240,33,33,1) 40%, rgba(73,42,164,1) 100%);
+    --button-color-2: #ff0000;
+    --button-color-3: #FFA24B;
+    --box-color: #FDFDFD;
+    --footer-text-color: #FFECE5;
+    --button-text: #FFFFFF;
+    --font-inter: "Inter", sans-serif;
+    --font-bold: bold;
+    --font-kadwa: font-family: "Kadwa", serif;
+    --font-weight-kadwa: font-weight: 800;
+}
 
 
 * {
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
+    font-family: var(--font-inter);
+    font-weight: var(--font-bold);
 }
 
 /* # NAVBAR */
@@ -24,73 +27,57 @@
 .navbar {
     display: flex;
     justify-content: center;
-    background: rgb(240,33,33);
-    background: linear-gradient(90deg, rgba(240,33,33,1) 65%, rgba(73,42,164,1) 100%);
+    background: var(--navbar-color);
 
 
 }
 .brand-logo {
     position: relative;
     right: 12%;
-    span {
-        font-weight: bold;
-        font-size: 1.25rem;
-    }
 }
 
 
 .nav-link {
     padding: 1.5rem;
-    color: white;
+    color: var(--navbar-color-2);
     text-decoration: none;
 }
 
 .chest-itens {
     gap: 2rem;
+
     .nav-icons {
         display: inline-flex;
-
     }
-
 }
 
 .user-a {
     margin-left:4rem ;
     gap: 2rem;
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
 }
 
 /* #NAVBAR END */
-
 
 /* MENU START */
 
 .menulayout {
     display: flex;
-    margin-top: 4rem;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 4rem;
 }
 
 .categorias {
     display: flex;
-    box-shadow: 0px 2px 4px 0px ;
-    border-radius: 3.8vh;
-    background-color: #F8F8F8;
-    width: 40rem;
-    gap: 3rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 40rem;
+    gap: 3rem;
     padding: 1.5rem;
-
-    .kadwa-bold {
-        text-align: center;
-    }
+    box-shadow: 0px 2px 4px 0px ;
+    border-radius: 3.8vh;
+    background-color: var(--box-color);
 }
 
 @media all and (min-width: 495px) and (max-width: 1024px) {
@@ -121,19 +108,29 @@
     }
 }
 
-
 /* MENU END */
 
 #btn-scroll {
     position: fixed;
     border: none;
     border-radius: 5rem;
-    background-color: rgba(240,33,33,1);
+    background-color: var(--button-color-2);
     float: right;
     bottom: 1rem;
     right: 5rem;
     transition: 0.3s ease-in;
     scale: 0;
+}
+.cardapio {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+    h5 {
+        font-weight: var(--font-bold);
+        text-align: center;
+    }
 }
 
 
@@ -148,15 +145,31 @@
     }
 }
 
+.buy {
+    background-color: var(--button-color-3);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    width: 9rem;
+    transition: transform 150ms;
+    
+}
 
-.cardapio {
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-    gap: 5rem;
+.exploring {
+    h1 {
+    font-weight: var(--font-bold);
+    font-size: 30px;
+    padding-top: 4rem;
+    padding-left: 2rem;
     flex-wrap: wrap;
+    }
+}
+
+.bxcate {
+
     h5 {
-        font-weight: bold;
         text-align: center;
     }
 }
@@ -167,34 +180,6 @@
     }
 }
 
-.exploring {
-    h1 {
-    font-weight: bolder;
-    font-size: 30px;
-    padding-top: 4rem;
-    padding-left: 2rem;
-    flex-wrap: wrap;
-}
-}
-.bxcate {
-
-    h5 {
-        text-align: center;
-    }
-
-}
-
-.buy {
-    background-color: #FFA24B;
-    border: none;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
-    width: 9rem;
-    transition: transform 150ms;
-    
-}
 
 /*RECEIPT*/
 
@@ -212,10 +197,9 @@
     
     h2{
         margin-bottom: 1.5rem;
-            font-family: "Kadwa", sans-serif;
+            font-family: var(--font-kadwa);
             text-align: center;
             font-weight: 700;
-            
         }
 
         
@@ -230,13 +214,12 @@
         transition: all 0.3s;
     }
     .button-close:hover {
-        background-color: crimson;
+        background-color: var(--button-color-2);
     }
 
     .meal-product-details{
         display: flex;
         flex-direction: row;
-    
     }
     
     .receipt-ingredient{
@@ -245,13 +228,13 @@
     }
     .receipt-ingredient li{
         padding: 10px;
-
     }
     
     
     .receipt-img{
         border-radius: 30px;
-        width:37.5rem ; height:37.5rem ;
+        width:37.5rem; 
+        height:37.5rem;
             
     }
     
@@ -260,21 +243,17 @@
     
             h3{
                 text-align: center;
-                
-            }
-            
+            } 
     }
     
     .receipt-buy-button{
-    
         float: right;
-    
     }
     
     .receipt-buy{
         padding: 0.8rem;
         width: 5em;
-        background-color: #FFA24B;
+        background-color: var(--button-color-3);
         border: none;
         border-radius: 1rem;
         text-decoration: none;
@@ -283,8 +262,6 @@
     
     .receipt-buy:hover{
         cursor:pointer;
-    
-    
     }
 
     @keyframes receipt_opening{
@@ -295,18 +272,97 @@
 
 
     @media all and (min-width: 1024px) and (max-width: 1280px) {
-
-
-
-    }
-    @media all and (min-width: 768px) and (max-width: 1024px) {
+        .receipt-background{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70vw;
+            padding: 2rem;
+            background-color: var(--box-color);
+            border-radius: 3rem;
+            box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
+            overflow: auto;
+            animation: receipt_opening 1s ;
+            
+            h2{
+                margin-bottom: 0.5rem;
+                    font-size: 1.5rem ;
+                    font-family: var(--font-kadwa);
+                    text-align: center;
+                    font-weight: 700;
+                    
+                }
+                
+                h4{
+                    font-size: 0.85rem;
+                }
+            }
+            .button-close{
+                font-weight: 700;
+                width: 3rem;
+                height: 3rem;
+                float: right;
+                border: none;
+                border-radius: 0.5rem;
+                transition: all 0.3s;
+            }
+            .button-close:hover {
+                background-color: var(--button-color-2);
+            }
+        
+            .meal-product-details{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .receipt-ingredient{
+                list-style-type: decimal;
+            }
+            .receipt-ingredient li{
+                padding: 3px;
+            }
+            
+            
+            .receipt-img{
+                border-radius: 20px;
+                width:15rem; 
+                height: 15rem;
+            }
+            
+            .receipt-description{
+                padding: 20px;
+            
+                    h3{
+                        font-size: 0.9rem;
+                        text-align: center;
+                    }
+            }
+            
+            .receipt-buy-button{
+                float: right;
+            }
+            
+            .receipt-buy{
+                padding: 0.2rem;
+                width: 2rem;
+                background-color: var(--button-color-3);
+                border: none;
+                border-radius: 1rem;
+                text-decoration: none;
+                color: black;
+            }
+        }     
+    
+    @media all and (min-width: 768px) and (max-width: 1023px) {
 
         .receipt-background{
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 40rem;
+            width: 80vw;
             padding: 2rem;
             background-color: #FEFEFE;
             border-radius: 3rem;
@@ -316,82 +372,71 @@
             
             h2{
                 margin-bottom: 0.5rem;
-                    font-family: "Kadwa", sans-serif;
+                    font-family: var(--font-kadwa);
                     text-align: center;
                     font-weight: 700;
-                    
                 }
                 
                 h4{
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                 }
             }
             .button-close{
                 font-weight: 700;
-                width: 2rem;
-                height: 2rem;
+                width: 3rem;
+                height: 3rem;
                 float: right;
                 border: none;
                 border-radius: 0.5rem;
                 transition: all 0.3s;
             }
             .button-close:hover {
-                background-color: crimson;
+                background-color: var(--button-color-2);
             }
         
             .meal-product-details{
                 display: flex;
-                flex-direction: row;
-            
+                align-items: center;
+                flex-direction: column;
             }
             
             .receipt-ingredient{
                 list-style-type: decimal;
-        
             }
             .receipt-ingredient li{
                 padding: 5px;
-        
             }
             
             
             .receipt-img{
                 border-radius: 30px;
-                width:10rem ; height: 10rem;
-                    
+                width:30rem; 
+                height: 30rem;
             }
             
             .receipt-description{
                 padding: 30px;
             
                     h3{
-                        text-align: center;
-                        
-                        
+                        text-align: center;   
                     }
-                    
             }
             
             .receipt-buy-button{
-            
                 float: right;
-            
             }
             
             .receipt-buy{
                 padding: 0.8rem;
                 width: 5em;
-                background-color: #FFA24B;
+                background-color: var(--button-color-3);
                 border: none;
                 border-radius: 1rem;
                 text-decoration: none;
                 color: black;
-            }
-            
+            }     
             .receipt-buy:hover{
-                cursor:pointer;
-            
-            
+                cursor: pointer;
             }
         
             @keyframes receipt_opening{
@@ -409,9 +454,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 40rem;
+            width: 80vw;
             padding: 2rem;
-            background-color: #FEFEFE;
+            background-color: var(--box-color);
             border-radius: 3rem;
             box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
             overflow:hidden;
@@ -419,10 +464,9 @@
             
             h2{
                 margin-bottom: 0.5rem;
-                    font-family: "Kadwa", sans-serif;
+                    font-family: var(--font-kadwa);
                     text-align: center;
                     font-weight: 700;
-                    
                 }
                 
                 h4{
@@ -439,28 +483,28 @@
                 transition: all 0.3s;
             }
             .button-close:hover {
-                background-color: crimson;
+                background-color: var(--button-color-2);
             }
         
             .meal-product-details{
                 display: flex;
-                flex-direction: row;
+                align-items: center;
+                flex-direction: column;
             
             }
             
             .receipt-ingredient{
                 list-style-type: decimal;
-        
             }
             .receipt-ingredient li{
                 padding: 5px;
-        
             }
             
             
             .receipt-img{
                 border-radius: 30px;
-                width:15rem ; height: 15rem;
+                width:15rem; 
+                height: 15rem;
                     
             }
             
@@ -469,22 +513,17 @@
             
                     h3{
                         text-align: center;
-                        
-                        
-                    }
-                    
+                    }    
             }
             
             .receipt-buy-button{
-            
                 float: right;
-            
             }
             
             .receipt-buy{
                 padding: 0.8rem;
                 width: 5em;
-                background-color: #FFA24B;
+                background-color: var(--button-color-3);
                 border: none;
                 border-radius: 1rem;
                 text-decoration: none;
@@ -492,9 +531,7 @@
             }
             
             .receipt-buy:hover{
-                cursor:pointer;
-            
-            
+                cursor:pointer;            
             }
         
             @keyframes receipt_opening{
@@ -513,23 +550,23 @@
             transform: translate(-50%, -50%);
             width: 25rem;
             padding: 2rem;
-            background-color: #FEFEFE;
+            background-color: var(--box-color);
             border-radius: 3rem;
             box-shadow: 0px 0px 10px 0px rgb(59, 59, 59);
             animation: receipt_opening 1s ;
             
             h2{
                 margin-bottom: 0.5rem;
-                    font-family: "Kadwa", sans-serif;
+                    font-family: var(--font-kadwa);
                     text-align: center;
                     font-weight: 700;
-                    
                 }
                 
                 h4{
                     font-size: 0.7rem;
                 }
             }
+
             .button-close{
                 font-weight: 700;
                 width: 3rem;
@@ -540,13 +577,13 @@
                 transition: all 0.3s;
             }
             .button-close:hover {
-                background-color: crimson;
+                background-color: var(--button-color-2);
             }
         
             .meal-product-details{
                 display: flex;
-                flex-direction: row;
-            
+                align-items: center;
+                flex-direction: column;
             }
             
             .receipt-ingredient{
@@ -561,31 +598,27 @@
             
             .receipt-img{
                 border-radius: 30px;
-                width:7.5rem ; height: 7.5rem;
+                width:10rem; 
+                height: 10rem;
                     
             }
             
             .receipt-description{
                 padding: 10px;
-            
+
                     h3{
-                        text-align: center;
-                        
-                        
-                    }
-                    
+                        text-align: center;  
+                    }  
             }
             
             .receipt-buy-button{
-            
                 float: right;
-            
             }
             
             .receipt-buy{
                 padding: 0.8rem;
                 width: 5em;
-                background-color: #FFA24B;
+                background-color: var(--button-color-3);
                 border: none;
                 border-radius: 1rem;
                 text-decoration: none;
@@ -594,8 +627,6 @@
             
             .receipt-buy:hover{
                 cursor:pointer;
-            
-            
             }
         
             @keyframes receipt_opening{
@@ -619,17 +650,18 @@
     width: 100%;
     padding: 0px;
     flex-direction: row;
-    background: rgb(240,33,33);
-    background: linear-gradient(90deg, rgba(240,33,33,1) 40%, rgba(73,42,164,1) 100%);
+    background: var(--footer-color);
     padding-bottom: 15px;
 }
 
 .footer-img{
     width: 3rem;
 }
+
 #linkedin{
     margin-right: 1rem; ;
 }
+
 .fbx1{
     text-align: center;
     padding-top: 5rem;
@@ -647,43 +679,37 @@
     justify-content: start;
 
     h1{
-        border-bottom: solid #FFECE5 5px;width: 11rem;margin-bottom: 2rem;
+        border-bottom: solid var(--footer-text-color) 5px;width: 11rem;margin-bottom: 2rem;
     }
 }
 .fbx3{
     padding-top: 2rem;
     flex:25%;
     h1{
-        border-bottom: solid #FFECE5 5px;width: 11rem;margin-bottom: 2rem;
+        border-bottom: solid var(--footer-text-color) 5px;width: 11rem;margin-bottom: 2rem;
     }
 
     
 }
 
 .footertext{
-    color: #FFECE5;
+    color: var(--footer-text-color);
     font-size: 1.2em;
-    font-family: "Kadwa", serif;
+    font-family: var(--font-kadwa);
     font-weight: 800;
 }
 .titlefooter{
     font-size: 3rem;
-    color: #FFECE5;
-    font-family: "Kadwa", serif;
+    color: var(--footer-text-color);
+    font-family: var(--font-kadwa);
     font-weight: 800;
 
 
 }
 .kadwa-bold {
-    font-family: "Kadwa", serif;
+    font-family: var(--font-kadwa);
     font-weight: 700;
     font-style: normal;
-}
-
-
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-    
-    
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -721,7 +747,7 @@
 
             h1{
                 width: auto;
-                border-top: solid #FFECE5 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+                border-top: solid var(--footer-text-color) 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
                 border-bottom: none;
             }
     }
@@ -732,7 +758,7 @@
         padding-top: 3rem;
 
          h1{
-            border-top: solid #FFECE5 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+            border-top: solid var(--footer-text-color) 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
             border-bottom: none;
             width: auto;
          }
@@ -773,7 +799,7 @@
 
             h1{
                 width: auto;
-                border-top: solid #FFECE5 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+                border-top: solid var(--footer-text-color) 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
                 border-bottom: none;
             }
     }
@@ -784,7 +810,7 @@
         padding-top: 3rem;
 
          h1{
-            border-top: solid #FFECE5 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+            border-top: solid var(--footer-text-color) 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
             border-bottom: none;
             width: auto;
          }
@@ -793,6 +819,7 @@
  }
 
 @media all and (max-width: 480px) { 
+
     #footer{
         flex-direction: column;
     }
@@ -807,9 +834,8 @@
         #footerlogo{
             width: 20rem;
         }
-
-        
     }
+
     .footer-img{
         width: 3rem;
 
@@ -826,7 +852,7 @@
 
             h1{
                 width: auto;
-                border-top: solid #FFECE5 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+                border-top: solid var(--footer-text-color) 5px;     /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
                 border-bottom: none;
             }
     }
@@ -837,7 +863,7 @@
         padding-top: 3rem;
 
          h1{
-            border-top: solid #FFECE5 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
+            border-top: solid var(--footer-text-color) 5px;        /* VOCÊ ESTÁ VENDO UMA MEDIA QUERIE*/
             border-bottom: none;
             width: auto;
          }
